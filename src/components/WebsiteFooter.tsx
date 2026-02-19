@@ -25,27 +25,26 @@ export default function WebsiteFooter({ labs, currentLab }: Props) {
     if (email) { setSubscribed(true); setEmail('') }
   }
 
+  const defaultLab = labs[0]?.slug || 'wallonie'
   const footerLinks = [
     { title: 'Découvrir', links: [
-      { label: 'À propos', href: '/about' },
-      { label: 'Nos Labs', href: '/labs' },
-      { label: 'Projets', href: '/projects' },
-      { label: 'Impact', href: '/impact' },
-      { label: 'Presse', href: '/press' },
+      { label: 'Nos Labs', href: '/' },
+      { label: 'Projets', href: `/${defaultLab}/projects/` },
+      { label: 'Presse', href: '/press/' },
+      { label: 'Contact', href: '/contact/' },
     ]},
     { title: 'Participer', links: [
-      { label: 'Formations', href: '/academy' },
-      { label: 'Événements', href: '/events' },
-      { label: 'Bénévolat', href: '/roots' },
-      { label: 'Faire un don', href: '/donate' },
-      { label: 'Boutique', href: '/shop' },
+      { label: 'Formations', href: `/${defaultLab}/academy/` },
+      { label: 'Événements', href: '/events/' },
+      { label: 'Bénévolat', href: `/${defaultLab}/roots/` },
+      { label: 'Faire un don', href: '/donate/' },
+      { label: 'Boutique', href: '/shop/' },
     ]},
     { title: 'Ressources', links: [
-      { label: 'Blog', href: '/blog' },
-      { label: 'Fiches pratiques', href: '/resources' },
-      { label: 'Design Studio', href: '/design-studio' },
-      { label: 'Contact', href: '/contact' },
-      { label: 'FAQ', href: '/faq' },
+      { label: 'Blog', href: `/${defaultLab}/articles/` },
+      { label: 'Fiches pratiques', href: '/resources/' },
+      { label: 'Design Studio', href: `/${defaultLab}/design-studio/` },
+      { label: 'Carte', href: '/map/' },
     ]},
   ]
 
@@ -160,7 +159,7 @@ export default function WebsiteFooter({ labs, currentLab }: Props) {
             <ul className="space-y-2.5">
               {labs.map(lab => (
                 <li key={lab.id}>
-                  <a href={`/lab/${lab.slug}`} className="text-stone-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2 group">
+                  <a href={`/${lab.slug}/`} className="text-stone-400 hover:text-white text-sm transition-colors duration-200 flex items-center gap-2 group">
                     <span className="text-xs">{COUNTRY_FLAGS[lab.country] || '🌿'}</span>
                     <span className="group-hover:translate-x-1 inline-block transition-transform">{lab.name}</span>
                   </a>

@@ -66,14 +66,15 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
 
   const currentLab = labs.find(l => l.id === currentLabId)
 
+  const defaultLab = labs[0]?.slug || 'wallonie'
   const navLinks = [
     { label: 'Accueil', href: '/' },
-    { label: 'Labs', href: '/labs', hasMega: true },
-    { label: 'Academy', href: '/academy' },
-    { label: 'Projets', href: '/projects' },
-    { label: 'Boutique', href: '/shop' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Roots', href: '/roots' },
+    { label: 'Labs', href: '/', hasMega: true },
+    { label: 'Academy', href: `/${defaultLab}/academy/` },
+    { label: 'Projets', href: `/${defaultLab}/projects/` },
+    { label: 'Boutique', href: '/shop/' },
+    { label: 'Blog', href: `/${defaultLab}/articles/` },
+    { label: 'Roots', href: `/${defaultLab}/roots/` },
   ]
 
   return (
@@ -137,7 +138,7 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
                   {link.hasMega && labMega && (
                     <div className="absolute left-1/2 -translate-x-1/2 mt-3 w-[480px] bg-white dark:bg-stone-800 rounded-2xl shadow-2xl border border-stone-200 dark:border-stone-700 overflow-hidden z-50 animate-dropdown">
                       <div className="p-4 border-b border-stone-100 dark:border-stone-700">
-                        <a href="/labs" className="flex items-center gap-3 p-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-700 transition-colors group">
+                        <a href="/" className="flex items-center gap-3 p-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-700 transition-colors group">
                           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#AFBD00] to-[#2D5016] flex items-center justify-center text-white text-lg">🌍</div>
                           <div>
                             <span className="font-bold text-stone-900 dark:text-white group-hover:text-[#5B5781] transition-colors">Semisto Global</span>
@@ -149,7 +150,7 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
                         {labs.map(lab => (
                           <a
                             key={lab.id}
-                            href={`/lab/${lab.slug}`}
+                            href={`/${lab.slug}/`}
                             className="flex items-center gap-3 p-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-700 transition-all group"
                             onClick={() => setLabMega(false)}
                           >
@@ -254,7 +255,7 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
               <div className="pt-4 border-t border-stone-200 dark:border-stone-800">
                 <p className="px-4 text-xs text-stone-400 uppercase tracking-wider mb-2">Labs</p>
                 {labs.map(lab => (
-                  <a key={lab.id} href={`/lab/${lab.slug}`} className="flex items-center gap-2 px-4 py-2 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors">
+                  <a key={lab.id} href={`/${lab.slug}/`} className="flex items-center gap-2 px-4 py-2 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors">
                     <span>{COUNTRY_FLAGS[lab.country] || '🌿'}</span>
                     {lab.name}
                   </a>

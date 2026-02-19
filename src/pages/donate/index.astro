@@ -1,9 +1,16 @@
 ---
-import WebsiteLayout from '../layouts/WebsiteLayout.astro'
-import DonationForm from '../components/DonationForm'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import WebsiteHeader from '../../components/WebsiteHeader'
+import WebsiteFooter from '../../components/WebsiteFooter'
+import DonationForm from '../../components/DonationForm'
+import { getLabs } from '../../lib/api'
+
+const labs = await getLabs()
 ---
 
-<WebsiteLayout title="Faire un don" description="Soutenez le mouvement Semisto en faisant un don">
+<BaseLayout title="Faire un don" description="Soutenez le mouvement Semisto en faisant un don pour les jardins-forêts">
+  <WebsiteHeader client:load labs={labs} currentLabId={null} currentLanguage="fr" availableLanguages={['fr', 'en', 'de']} />
+
   <div class="pt-32 pb-20 px-6">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
@@ -19,7 +26,6 @@ import DonationForm from '../components/DonationForm'
 
       <DonationForm client:visible />
 
-      <!-- Trust indicators -->
       <div class="grid sm:grid-cols-3 gap-6 mt-16 pt-12 border-t border-stone-200 dark:border-stone-800">
         <div class="text-center">
           <p class="text-3xl font-bold text-[#AFBD00]">100%</p>
@@ -36,4 +42,6 @@ import DonationForm from '../components/DonationForm'
       </div>
     </div>
   </div>
-</WebsiteLayout>
+
+  <WebsiteFooter client:visible labs={labs} />
+</BaseLayout>

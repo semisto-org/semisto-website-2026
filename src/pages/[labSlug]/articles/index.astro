@@ -38,7 +38,7 @@ const jsonLd = breadcrumbJsonLd([
     ) : (
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map(article => (
-          <a href={`/${labSlug}/articles/${article.slug}/`} class="group bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
+          <a href={`/${labSlug}/articles/${article.slug}/`} class="group bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
             <img src={article.image} alt={article.title} class="w-full h-48 object-cover" loading="lazy" />
             <div class="p-6">
               <div class="flex items-center gap-2 mb-3">

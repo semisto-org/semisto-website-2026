@@ -45,13 +45,13 @@ const jsonLd = [
   <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Breadcrumb -->
     <nav class="text-sm text-stone-400 mb-6">
-      <a href="/" class="hover:text-stone-600">Accueil</a>
+      <a href="/" class="hover:text-stone-600 dark:text-stone-400">Accueil</a>
       <span class="mx-2">›</span>
-      <a href={`/${labSlug}/`} class="hover:text-stone-600">{lab.name}</a>
+      <a href={`/${labSlug}/`} class="hover:text-stone-600 dark:text-stone-400">{lab.name}</a>
       <span class="mx-2">›</span>
-      <a href={`/${labSlug}/academy/`} class="hover:text-stone-600">Academy</a>
+      <a href={`/${labSlug}/academy/`} class="hover:text-stone-600 dark:text-stone-400">Academy</a>
       <span class="mx-2">›</span>
-      <span class="text-stone-600">{course.title}</span>
+      <span class="text-stone-600 dark:text-stone-400">{course.title}</span>
     </nav>
 
     <img src={course.image} alt={course.title} class="w-full h-64 md:h-96 object-cover rounded-2xl mb-8" />
@@ -82,22 +82,22 @@ const jsonLd = [
         )}
       </div>
 
-      <aside class="bg-stone-50 rounded-2xl p-6 border border-stone-200 h-fit sticky top-20">
+      <aside class="bg-stone-50 dark:bg-stone-800 rounded-2xl p-6 border border-stone-200 h-fit sticky top-20">
         <div class="text-3xl font-bold text-stone-800 mb-1">{course.price}€</div>
         <p class="text-sm text-stone-500 mb-4">{course.duration} · {course.format}</p>
 
         <div class="space-y-3 mb-6 text-sm">
           <div class="flex justify-between">
-            <span class="text-stone-500">Prochaine session</span>
+            <span class="text-stone-500 dark:text-stone-400">Prochaine session</span>
             <span class="font-medium text-stone-700">{new Date(course.nextSession).toLocaleDateString('fr-FR')}</span>
           </div>
           <div class="flex justify-between">
-            <span class="text-stone-500">Places restantes</span>
+            <span class="text-stone-500 dark:text-stone-400">Places restantes</span>
             <span class="font-medium text-stone-700">{course.spotsAvailable}/{course.spotsTotal}</span>
           </div>
           {course.location && (
             <div class="flex justify-between">
-              <span class="text-stone-500">Lieu</span>
+              <span class="text-stone-500 dark:text-stone-400">Lieu</span>
               <span class="font-medium text-stone-700 text-right">{course.location}</span>
             </div>
           )}
@@ -110,13 +110,13 @@ const jsonLd = [
     </div>
 
     {relatedCourses.length > 0 && (
-      <section class="mt-16 pt-10 border-t border-stone-200">
+      <section class="mt-16 pt-10 border-t border-stone-200 dark:border-stone-700">
         <h2 class="text-2xl font-bold text-stone-800 mb-6" style="font-family: var(--font-heading)">
           Autres formations
         </h2>
         <div class="grid md:grid-cols-3 gap-6">
           {relatedCourses.map(c => (
-            <a href={`/${labSlug}/academy/${c.slug}/`} class="group bg-white rounded-xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
+            <a href={`/${labSlug}/academy/${c.slug}/`} class="group bg-white dark:bg-stone-900 rounded-xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
               <img src={c.image} alt={c.title} class="w-full h-40 object-cover" loading="lazy" />
               <div class="p-4">
                 <h3 class="font-semibold text-stone-800 group-hover:text-[#B01A19] transition-colors">{c.title}</h3>

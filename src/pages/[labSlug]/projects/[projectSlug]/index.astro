@@ -39,13 +39,13 @@ const jsonLd = breadcrumbJsonLd([
 >
   <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <nav class="text-sm text-stone-400 mb-6">
-      <a href="/" class="hover:text-stone-600">Accueil</a>
+      <a href="/" class="hover:text-stone-600 dark:text-stone-400">Accueil</a>
       <span class="mx-2">›</span>
-      <a href={`/${labSlug}/`} class="hover:text-stone-600">{lab.name}</a>
+      <a href={`/${labSlug}/`} class="hover:text-stone-600 dark:text-stone-400">{lab.name}</a>
       <span class="mx-2">›</span>
-      <a href={`/${labSlug}/projects/`} class="hover:text-stone-600">Projets</a>
+      <a href={`/${labSlug}/projects/`} class="hover:text-stone-600 dark:text-stone-400">Projets</a>
       <span class="mx-2">›</span>
-      <span class="text-stone-600">{project.title}</span>
+      <span class="text-stone-600 dark:text-stone-400">{project.title}</span>
     </nav>
 
     {project.images.length > 0 && (
@@ -64,15 +64,15 @@ const jsonLd = breadcrumbJsonLd([
 
     <div class="grid md:grid-cols-3 gap-8">
       <div class="md:col-span-2 prose prose-stone max-w-none">
-        <p class="text-lg text-stone-600">{project.description}</p>
+        <p class="text-lg text-stone-600 dark:text-stone-400">{project.description}</p>
 
         <div class="grid grid-cols-2 gap-4 my-8 not-prose">
-          <div class="bg-stone-50 rounded-xl p-4 text-center">
-            <div class="text-2xl font-bold text-stone-800">{project.surface}</div>
+          <div class="bg-stone-50 dark:bg-stone-800 rounded-xl p-4 text-center">
+            <div class="text-2xl font-bold text-stone-800 dark:text-stone-100">{project.surface}</div>
             <div class="text-xs text-stone-500 uppercase">m² transformés</div>
           </div>
-          <div class="bg-stone-50 rounded-xl p-4 text-center">
-            <div class="text-2xl font-bold text-stone-800">{project.treesPlanted}</div>
+          <div class="bg-stone-50 dark:bg-stone-800 rounded-xl p-4 text-center">
+            <div class="text-2xl font-bold text-stone-800 dark:text-stone-100">{project.treesPlanted}</div>
             <div class="text-xs text-stone-500 uppercase">arbres plantés</div>
           </div>
         </div>
@@ -89,11 +89,11 @@ const jsonLd = breadcrumbJsonLd([
 
       <aside class="h-fit">
         {project.fundingStatus === 'active' && project.fundingGoal && (
-          <div id="donate" class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <div id="donate" class="bg-stone-50 dark:bg-stone-800 rounded-2xl p-6 border border-stone-200 dark:border-stone-700">
             <h3 class="font-semibold text-stone-800 mb-3">Soutenir ce projet</h3>
             <div class="mb-3">
               <div class="flex justify-between text-sm mb-1">
-                <span class="text-stone-500">{project.fundingRaised}€ récoltés</span>
+                <span class="text-stone-500 dark:text-stone-400">{project.fundingRaised}€ récoltés</span>
                 <span class="font-medium text-stone-700">{project.fundingGoal}€</span>
               </div>
               <div class="w-full bg-stone-200 rounded-full h-2">
@@ -109,21 +109,21 @@ const jsonLd = breadcrumbJsonLd([
           </div>
         )}
 
-        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 mt-4">
+        <div class="bg-stone-50 dark:bg-stone-800 rounded-2xl p-6 border border-stone-200 mt-4">
           <h3 class="font-semibold text-stone-800 mb-3">Localisation</h3>
-          <p class="text-sm text-stone-600">{project.location}</p>
+          <p class="text-sm text-stone-600 dark:text-stone-400">{project.location}</p>
         </div>
       </aside>
     </div>
 
     {relatedProjects.length > 0 && (
-      <section class="mt-16 pt-10 border-t border-stone-200">
+      <section class="mt-16 pt-10 border-t border-stone-200 dark:border-stone-700">
         <h2 class="text-2xl font-bold text-stone-800 mb-6" style="font-family: var(--font-heading)">
           Autres projets
         </h2>
         <div class="grid md:grid-cols-3 gap-6">
           {relatedProjects.map(p => (
-            <a href={`/${labSlug}/projects/${p.slug}/`} class="group bg-white rounded-xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
+            <a href={`/${labSlug}/projects/${p.slug}/`} class="group bg-white dark:bg-stone-900 rounded-xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
               {p.images[0] && <img src={p.images[0]} alt={p.title} class="w-full h-40 object-cover" loading="lazy" />}
               <div class="p-4">
                 <h3 class="font-semibold text-stone-800 group-hover:text-[#AFBD00] transition-colors">{p.title}</h3>

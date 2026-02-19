@@ -329,7 +329,7 @@
       "currency": "EUR",
       "spotsAvailable": 2,
       "spotsTotal": 12,
-      "image": "/images/events/atelier-bouturage.jpg",
+      "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80",
       "speakers": []
     },
     {
@@ -489,7 +489,7 @@
       "treesPlanted": 420,
       "status": "completed",
       "completedDate": "2025-11-20",
-      "images": ["/images/projects/montreuil-1.jpg", "/images/projects/montreuil-2.jpg"],
+      "images": ["https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&q=80", "https://images.unsplash.com/photo-1477554103909-49b1a2b0bd3e?w=800&q=80"],
       "testimonial": {
         "text": "Un projet magnifique qui redonne vie à ce patrimoine unique. Les habitants sont fiers de leur nouvelle forêt !",
         "author": "Antoine Lefèvre",
@@ -533,7 +533,7 @@
       "treesPlanted": 340,
       "status": "completed",
       "completedDate": "2025-06-10",
-      "images": ["https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80", "/images/projects/can-pujol-2.jpg"],
+      "images": ["https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80", "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80"],
       "testimonial": {
         "text": "El bosc comestible ha transformat completament la nostra finca. Ara produïm fruita tot l'any malgrat les sequeres.",
         "author": "Pere Mas",
@@ -658,7 +658,7 @@
       "difficulty": "facile",
       "requirements": ["Sécateur personnel apprécié"],
       "providedTools": true,
-      "image": "/images/worksites/montreuil-entretien.jpg"
+      "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&q=80"
     },
     {
       "id": "worksite-koln-pflanzung",
@@ -675,7 +675,7 @@
       "difficulty": "leicht",
       "requirements": ["Arbeitskleidung", "Handschuhe"],
       "providedTools": true,
-      "image": "/images/worksites/koln-pflanzung.jpg"
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80"
     }
   ],
   "products": [
@@ -690,7 +690,7 @@
       "subcategory": "pommier",
       "stock": 45,
       "countries": ["BE", "FR"],
-      "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d9b?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800&q=80",
       "specs": {
         "hauteur": "Scion 1 an",
         "porteGreffe": "M106",
@@ -725,7 +725,7 @@
       "subcategory": "fixateur-azote",
       "stock": 35,
       "countries": ["BE", "FR"],
-      "image": "/images/products/goumi.jpg",
+      "image": "https://images.unsplash.com/photo-1596451190630-186aff535bf2?w=800&q=80",
       "specs": {
         "hauteur": "40-60 cm",
         "rusticité": "-25°C"
@@ -742,7 +742,7 @@
       "subcategory": "plante-support",
       "stock": 200,
       "countries": ["BE", "FR", "DE", "ES"],
-      "image": "/images/products/consoude.jpg",
+      "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80",
       "specs": {
         "conditionnement": "3 éclats de souche"
       }
@@ -758,7 +758,7 @@
       "subcategory": "design",
       "stock": 28,
       "countries": ["BE", "FR"],
-      "image": "/images/products/livre-crawford.jpg",
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&q=80",
       "specs": {
         "pages": "320",
         "éditeur": "Ulmer",
@@ -776,7 +776,7 @@
       "subcategory": "sol",
       "stock": 15,
       "countries": ["BE", "FR"],
-      "image": "/images/products/livre-bacteries.jpg",
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&q=80",
       "specs": {
         "pages": "272",
         "éditeur": "Rouergue",
@@ -794,7 +794,7 @@
       "subcategory": "travail-sol",
       "stock": 12,
       "countries": ["BE", "FR", "DE"],
-      "image": "/images/products/grelinette.jpg",
+      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
       "specs": {
         "largeur": "50 cm",
         "matériau": "Acier forgé"
@@ -811,7 +811,7 @@
       "subcategory": "taille",
       "stock": 20,
       "countries": ["BE", "FR", "DE", "ES"],
-      "image": "/images/products/felco2.jpg",
+      "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80",
       "specs": {
         "coupe": "22mm max",
         "main": "droitier"
@@ -828,7 +828,7 @@
       "subcategory": "multiplication",
       "stock": 18,
       "countries": ["BE", "FR", "DE", "ES"],
-      "image": "/images/products/kit-greffe.jpg",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
       "specs": {
         "contenu": "Greffoir, raphia, mastic, notice"
       }
@@ -844,7 +844,7 @@
       "subcategory": "cartes",
       "stock": 40,
       "countries": ["BE", "FR"],
-      "image": "/images/products/cartes-strates.jpg",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
       "specs": {
         "cartes": "50",
         "format": "10x15 cm",
@@ -862,7 +862,7 @@
       "subcategory": "poster",
       "stock": 55,
       "countries": ["BE", "FR", "DE", "ES"],
-      "image": "/images/products/poster-guildes.jpg",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800&q=80",
       "specs": {
         "format": "A1 (59x84 cm)",
         "papier": "250g couché mat"
@@ -879,7 +879,7 @@
       "subcategory": "figuier",
       "stock": 25,
       "countries": ["ES"],
-      "image": "/images/products/figuera.jpg",
+      "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80",
       "specs": {
         "altura": "80-100 cm",
         "rusticitat": "-12°C"
@@ -916,7 +916,7 @@
       "readingTime": 12,
       "category": "technique",
       "tags": ["guildes", "pommier", "associations"],
-      "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d9b?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800&q=80",
       "isFeatured": false
     },
     {
@@ -932,7 +932,7 @@
       "readingTime": 10,
       "category": "retour-experience",
       "tags": ["micro-forêt", "miyawaki", "bilan"],
-      "image": "/images/articles/montreuil-un-an.jpg",
+      "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&q=80",
       "isFeatured": true
     },
     {
@@ -948,7 +948,7 @@
       "readingTime": 15,
       "category": "technique",
       "tags": ["méditerranée", "sécheresse", "eau"],
-      "image": "/images/articles/secheresse-med.jpg",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
       "isFeatured": true
     },
     {
@@ -964,7 +964,7 @@
       "readingTime": 6,
       "category": "témoignage",
       "tags": ["heroes", "bénévolat", "engagement"],
-      "image": "/images/articles/hero-temoignage.jpg",
+      "image": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
       "isFeatured": false
     },
     {
@@ -980,7 +980,7 @@
       "readingTime": 7,
       "category": "retour-experience",
       "tags": ["école", "pédagogie", "enfants"],
-      "image": "/images/articles/ecole-pedagogie.jpg",
+      "image": "https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&q=80",
       "isFeatured": false
     }
   ],
@@ -993,7 +993,7 @@
       "description": "Reportage de 15 minutes dans le JT de 13h sur le mouvement Semisto et le jardin-forêt de Gembloux.",
       "date": "2025-11-20",
       "url": "https://rtbf.be/jardins-forets-belgique",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
+      "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
     {
       "id": "press-lemonde",
@@ -1003,7 +1003,7 @@
       "description": "Enquête sur l'essor des jardins-forêts urbains en Europe, avec témoignages de Semisto Île-de-France.",
       "date": "2025-10-05",
       "url": "https://lemonde.fr/forets-comestibles-villes",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
+      "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
     {
       "id": "press-lavanguardia",
@@ -1013,7 +1013,7 @@
       "description": "Article sobre el moviment dels boscos comestibles a Catalunya i el treball de Semisto Catalunya.",
       "date": "2025-09-18",
       "url": "https://lavanguardia.com/boscos-comestibles",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
+      "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
     {
       "id": "press-podcast-regen",
@@ -1023,7 +1023,7 @@
       "description": "Interview de 45 minutes avec Marie Fontaine, co-fondatrice de Semisto, sur la vision et les défis du mouvement.",
       "date": "2025-08-22",
       "url": "https://podcast-regeneration.fr/semisto",
-      "image": "/images/press/podcast-regen.jpg"
+      "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
     {
       "id": "press-wdr",
@@ -1033,7 +1033,7 @@
       "description": "Beitrag über den Gemeinschaftsgarten in Köln-Ehrenfeld und das Engagement der Food Forest Heroes.",
       "date": "2025-07-10",
       "url": "https://wdr.de/waldgarten-koln",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
+      "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     }
   ],
   "resources": [
@@ -1056,7 +1056,7 @@
       "format": "pdf",
       "fileSize": "3.1 MB",
       "downloadUrl": "/resources/guildes-vegetales.pdf",
-      "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d9b?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800&q=80",
       "languages": ["fr", "en", "de"]
     },
     {
@@ -1067,7 +1067,7 @@
       "format": "pdf",
       "fileSize": "1.8 MB",
       "downloadUrl": "/resources/succession-ecologique.pdf",
-      "image": "/images/resources/succession.jpg",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
       "languages": ["fr", "en"]
     },
     {
@@ -1078,7 +1078,7 @@
       "format": "pdf",
       "fileSize": "4.2 MB",
       "downloadUrl": "/resources/fixatrices-azote.pdf",
-      "image": "/images/resources/fixatrices.jpg",
+      "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80",
       "languages": ["fr", "en", "de", "es"]
     },
     {
@@ -1089,7 +1089,7 @@
       "format": "pdf",
       "fileSize": "5.6 MB",
       "downloadUrl": "/resources/gestion-eau.pdf",
-      "image": "/images/resources/eau.jpg",
+      "image": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
       "languages": ["fr", "en", "es", "ca"]
     },
     {
@@ -1100,7 +1100,7 @@
       "format": "pdf",
       "fileSize": "1.2 MB",
       "downloadUrl": "/resources/calendrier-plantation.pdf",
-      "image": "/images/resources/calendrier.jpg",
+      "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&q=80",
       "languages": ["fr", "de"]
     }
   ],

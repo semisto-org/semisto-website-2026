@@ -43,7 +43,7 @@ const jsonLd = breadcrumbJsonLd([
           <h2 class="text-2xl font-bold text-stone-800 mb-6" style="font-family: var(--font-heading)">{label}</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {catResources.map(resource => (
-              <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
+              <div class="bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
                 <img src={resource.image} alt={resource.title} class="w-full h-40 object-cover" loading="lazy" />
                 <div class="p-6">
                   <div class="flex items-center gap-2 mb-3">

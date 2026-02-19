@@ -69,7 +69,7 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
   const defaultLab = labs[0]?.slug || 'wallonie'
   const navLinks = [
     { label: 'Accueil', href: '/' },
-    { label: 'Labs', href: '/', hasMega: true },
+    { label: 'Labs', href: '#labs', hasMega: true },
     { label: 'Academy', href: `/${defaultLab}/academy/` },
     { label: 'Projets', href: `/${defaultLab}/projects/` },
     { label: 'Boutique', href: '/shop/' },

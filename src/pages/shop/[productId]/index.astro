@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { ProductDetail } from '../../../components/ProductDetail'
+import { getLabs, getProducts, getProductById } from '../../../lib/api'
+import { breadcrumbJsonLd } from '../../../lib/seo'
+
+export async function getStaticPaths() {
+  const products = await getProducts()
+  return products.map(p => ({ params: { productId: p.id } }))
+}
+
+const { productId } = Astro.params
+const labs = await getLabs()
+const product = await getProductById(productId!)
+if (!product) return Astro.redirect('/404')
+
+const allProducts = await getProducts()
+const relatedProducts = allProducts
+  .filter(p => p.id !== product.id && (p.type === product.type || p.category === product.category))
+  .slice(0, 4)
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: 'Boutique', url: '/shop/' },
+  { name: product.name, url: `/shop/${productId}/` },
+])
+---
+
+<BaseLayout
+  title={product.name}
+  description={product.description}
+  image={product.image}
+  labs={labs}
+  jsonLd={jsonLd}
+>
+  <ProductDetail
+    client:load
+    product={product}
+    relatedProducts={relatedProducts}
+  />
+</BaseLayout>

@@ -108,9 +108,26 @@ export async function getPotentialZones(): Promise<PotentialZone[]> {
   return (await fetchAPI<PotentialZone[]>('/website/map/zones')) ?? fallback<PotentialZone[]>('potentialZones')
 }
 
+// Products by ID
+export async function getProductById(id: string): Promise<Product | undefined> {
+  const all = await getProducts()
+  return all.find(p => p.id === id)
+}
+
+// Events by slug
+export async function getEventBySlug(slug: string): Promise<Event | undefined> {
+  const all = await getEvents()
+  return all.find(e => e.slug === slug)
+}
+
 // Design Profiles
 export async function getDesignProfiles(): Promise<DesignProfile[]> {
   return (await fetchAPI<DesignProfile[]>('/website/design-profiles')) ?? fallback<DesignProfile[]>('designProfiles')
+}
+
+export async function getDesignProfileBySlug(slug: string): Promise<DesignProfile | undefined> {
+  const all = await getDesignProfiles()
+  return all.find(p => p.slug === slug)
 }
 
 // Press

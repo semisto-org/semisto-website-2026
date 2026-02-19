@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro'
+import { DesignStudioProfile } from '../../../../components/DesignStudioProfile'
+import { getLabs, getLabBySlug, getDesignProfiles, getDesignProfileBySlug, getProjects } from '../../../../lib/api'
+import { breadcrumbJsonLd } from '../../../../lib/seo'
+
+export async function getStaticPaths() {
+  const labs = await getLabs()
+  const profiles = await getDesignProfiles()
+  const paths: { params: { labSlug: string; profileSlug: string } }[] = []
+  for (const lab of labs) {
+    if (lab.activePoles.includes('design-studio')) {
+      for (const profile of profiles) {
+        paths.push({ params: { labSlug: lab.slug, profileSlug: profile.slug } })
+      }
+    }
+  }
+  return paths
+}
+
+const { labSlug, profileSlug } = Astro.params
+const labs = await getLabs()
+const lab = await getLabBySlug(labSlug!)
+const profile = await getDesignProfileBySlug(profileSlug!)
+if (!lab || !profile) return Astro.redirect('/404')
+
+const allProjects = await getProjects(lab.id)
+const exampleProjects = allProjects.filter(p => profile.exampleProjects.includes(p.id))
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: lab.name, url: `/${labSlug}/` },
+  { name: 'Design Studio', url: `/${labSlug}/design-studio/` },
+  { name: profile.title, url: `/${labSlug}/design-studio/${profileSlug}/` },
+])
+---
+
+<BaseLayout
+  title={`${profile.title} — Design Studio ${lab.name}`}
+  description={profile.description}
+  labs={labs}
+  currentLabSlug={labSlug}
+  jsonLd={jsonLd}
+>
+  <DesignStudioProfile
+    client:load
+    lab={lab}
+    profile={profile}
+    exampleProjects={exampleProjects}
+  />
+</BaseLayout>

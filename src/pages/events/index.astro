@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { EventCatalog } from '../../components/EventCatalog'
+import { getLabs, getEvents } from '../../lib/api'
+import { breadcrumbJsonLd } from '../../lib/seo'
+
+const labs = await getLabs()
+const events = await getEvents()
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: 'Événements', url: '/events/' },
+])
+---
+
+<BaseLayout
+  title="Événements"
+  description="Conférences, visites de jardins-forêts et ateliers pratiques organisés par le réseau Semisto."
+  labs={labs}
+  jsonLd={jsonLd}
+>
+  <EventCatalog client:load events={events} />
+</BaseLayout>

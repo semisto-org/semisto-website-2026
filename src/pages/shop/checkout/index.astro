@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { Checkout } from '../../../components/Checkout'
+import { getLabs } from '../../../lib/api'
+
+const labs = await getLabs()
+const pickupLocations = labs.map(l => ({
+  labId: l.id,
+  name: `Pépinière ${l.name}`,
+  address: l.address,
+}))
+---
+
+<BaseLayout
+  title="Commande"
+  description="Finalisez votre commande et choisissez votre point de retrait."
+  labs={labs}
+>
+  <Checkout
+    client:load
+    items={[]}
+    total={0}
+    currency="EUR"
+    pickupLocations={pickupLocations}
+  />
+</BaseLayout>

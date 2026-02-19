@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro'
+import EventDetail from '../../../../components/EventDetail'
+import { getLabs, getLabBySlug, getEvents, getEventBySlug } from '../../../../lib/api'
+import { breadcrumbJsonLd } from '../../../../lib/seo'
+
+export async function getStaticPaths() {
+  const labs = await getLabs()
+  const events = await getEvents()
+  return events.map(event => {
+    const lab = labs.find(l => l.id === event.labId)
+    return { params: { labSlug: lab?.slug, eventSlug: event.slug } }
+  }).filter(p => p.params.labSlug)
+}
+
+const { labSlug, eventSlug } = Astro.params
+const labs = await getLabs()
+const lab = await getLabBySlug(labSlug!)
+const event = await getEventBySlug(eventSlug!)
+if (!lab || !event) return Astro.redirect('/404')
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: lab.name, url: `/${labSlug}/` },
+  { name: 'Événements', url: `/${labSlug}/events/` },
+  { name: event.title, url: `/${labSlug}/events/${eventSlug}/` },
+])
+---
+
+<BaseLayout
+  title={event.title}
+  description={event.description}
+  image={event.image}
+  labs={labs}
+  currentLabSlug={labSlug}
+  jsonLd={jsonLd}
+  type="article"
+>
+  <EventDetail client:load event={event} />
+</BaseLayout>

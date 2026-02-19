@@ -88,7 +88,7 @@ export default function DonationForm({ projectTitle, projectId, project, onDonat
           ))}
         </div>
 
-        <h3 className="text-3xl font-bold text-stone-900 dark:text-white mb-3" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+        <h3 className="text-3xl font-bold text-stone-900 dark:text-white mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
           Merci infiniment ! 🌳
         </h3>
         <p className="text-lg text-stone-600 dark:text-stone-400 max-w-md mx-auto mb-2">

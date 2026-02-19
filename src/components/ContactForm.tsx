@@ -108,7 +108,7 @@ export default function ContactForm({ labs, onSubmit }: Props) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="text-3xl font-bold text-stone-900 dark:text-white mb-3" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h3 className="text-3xl font-bold text-stone-900 dark:text-white mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
             Message envoyé !
           </h3>
           <p className="text-stone-600 dark:text-stone-400 mb-2">
@@ -139,7 +139,7 @@ export default function ContactForm({ labs, onSubmit }: Props) {
           <span className="inline-block px-5 py-2 rounded-full text-sm font-bold mb-6 bg-white/10 text-white/90 backdrop-blur-sm border border-white/20">
             📬 Contact
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
             Parlons de votre projet
           </h1>
           <p className="text-lg text-white/70 max-w-xl mx-auto">

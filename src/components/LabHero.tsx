@@ -58,7 +58,7 @@ export function LabHero({ lab, onNewsletterSubscribe }: LabHeroProps) {
             {/* Main heading */}
             <h1 
               className="text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tight text-stone-900 dark:text-stone-50"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
               <span className="block">{lab.name.replace('Semisto ', '')}</span>
               <span 

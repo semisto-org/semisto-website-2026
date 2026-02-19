@@ -28,7 +28,7 @@ export function DesignStudioProfile({ lab, profile, exampleProjects, onContactRe
             </div>
             <div>
               <p className="text-[#AFBD00] font-bold text-sm uppercase tracking-wider">Design Studio · {lab.name}</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <h1 className="text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: 'var(--font-heading)' }}>
                 {profile.title}
               </h1>
             </div>
@@ -47,7 +47,7 @@ export function DesignStudioProfile({ lab, profile, exampleProjects, onContactRe
       <div className="max-w-6xl mx-auto px-6 py-16">
         {/* Benefits */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
             Vos avantages
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -64,7 +64,7 @@ export function DesignStudioProfile({ lab, profile, exampleProjects, onContactRe
 
         {/* Services */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
             Nos services
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -84,7 +84,7 @@ export function DesignStudioProfile({ lab, profile, exampleProjects, onContactRe
         {/* Example Projects */}
         {exampleProjects.length > 0 && (
           <section className="mb-16">
-            <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+            <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
               Exemples de réalisations
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,7 +107,7 @@ export function DesignStudioProfile({ lab, profile, exampleProjects, onContactRe
         <section className="relative overflow-hidden rounded-3xl p-8 md:p-12" style={{ background: 'linear-gradient(135deg, #3d4a2d 0%, #2d3a1d 100%)' }}>
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#AFBD00]/10 blur-3xl" />
           <div className="relative text-center">
-            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
               Prêt à transformer votre espace ?
             </h2>
             <p className="text-white/70 mb-8 max-w-lg mx-auto">

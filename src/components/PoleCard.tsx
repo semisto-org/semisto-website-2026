@@ -88,7 +88,7 @@ export function PoleCard({ poleId, onSelect }: PoleCardProps) {
       {/* Content */}
       <h3 
         className="relative z-10 text-2xl font-bold mb-3 tracking-tight"
-        style={{ color: pole.color, fontFamily: '"Sole Serif Small", Georgia, serif' }}
+        style={{ color: pole.color, fontFamily: 'var(--font-heading)' }}
       >
         {pole.title}
       </h3>

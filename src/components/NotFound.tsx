@@ -119,13 +119,13 @@ export default function NotFound() {
         </div>
 
         {/* 404 */}
-        <h1 className="text-8xl md:text-9xl font-black text-white/90 mb-4 tracking-tight" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+        <h1 className="text-8xl md:text-9xl font-black text-white/90 mb-4 tracking-tight" style={{ fontFamily: 'var(--font-heading)' }}>
           4
           <span className="inline-block animate-pulse text-[#AFBD00]">0</span>
           4
         </h1>
 
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
           Cette page n'a pas encore germé
         </h2>
 
@@ -138,7 +138,7 @@ export default function NotFound() {
           <a href="/" className="px-8 py-3.5 rounded-xl bg-[#AFBD00] text-stone-900 font-bold hover:bg-[#c4d300] transition-all hover:scale-105 shadow-lg shadow-[#AFBD00]/25">
             🏠 Retour à l'accueil
           </a>
-          <a href="/blog" className="px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all backdrop-blur-sm">
+          <a href="/resources/" className="px-8 py-3.5 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all backdrop-blur-sm">
             📖 Explorer le blog
           </a>
         </div>
@@ -146,10 +146,10 @@ export default function NotFound() {
         {/* Helpful links */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
-            { href: '/shop', icon: '🌿', label: 'Boutique' },
-            { href: '/academy', icon: '🎓', label: 'Formations' },
-            { href: '/projects', icon: '🗺️', label: 'Projets' },
-            { href: '/contact', icon: '📬', label: 'Contact' },
+            { href: '/shop/', icon: '🌿', label: 'Boutique' },
+            { href: '/resources/', icon: '🎓', label: 'Ressources' },
+            { href: '/map/', icon: '🗺️', label: 'Carte' },
+            { href: '/contact/', icon: '📬', label: 'Contact' },
           ].map(link => (
             <a
               key={link.href}

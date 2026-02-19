@@ -75,7 +75,7 @@ export default function WebsiteFooter({ labs, currentLab }: Props) {
                 </div>
                 <span className="text-xs uppercase tracking-widest text-stone-500 font-semibold">Newsletter</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                 Restez connecté à la nature
               </h3>
               <p className="text-stone-400 leading-relaxed">
@@ -122,7 +122,7 @@ export default function WebsiteFooter({ labs, currentLab }: Props) {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#AFBD00] to-[#2D5016] flex items-center justify-center text-white font-bold text-lg shadow-lg">S</div>
-              <span className="text-xl font-bold" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>Semisto</span>
+              <span className="text-xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>Semisto</span>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed mb-6 max-w-sm">
               Réseau européen de jardins-forêts. Nous concevons, plantons et transmettons les savoirs pour régénérer nos territoires.

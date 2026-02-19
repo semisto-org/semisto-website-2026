@@ -37,7 +37,7 @@ export function Checkout({ items, total, currency, pickupLocations, onSubmitOrde
           <div className="w-24 h-24 rounded-full bg-[#AFBD00]/10 flex items-center justify-center mx-auto mb-6">
             <svg className="w-12 h-12 text-[#AFBD00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
           </div>
-          <h1 className="text-3xl font-bold text-stone-900 dark:text-white mb-4" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h1 className="text-3xl font-bold text-stone-900 dark:text-white mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
             Commande confirmée ! 🌱
           </h1>
           <p className="text-stone-600 dark:text-stone-400 mb-8">
@@ -60,7 +60,7 @@ export function Checkout({ items, total, currency, pickupLocations, onSubmitOrde
           Retour
         </button>
 
-        <h1 className="text-3xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+        <h1 className="text-3xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
           Commande
         </h1>
 

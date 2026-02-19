@@ -68,7 +68,7 @@ export function ProjectDetail({ project, lab, relatedProjects, onDonate, onBack 
                 <span className="px-3 py-1 rounded-full text-xs font-bold bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400">{CLIENT_TYPE_LABELS[project.clientType] || project.clientType}</span>
               </div>
 
-              <h1 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-white mb-2" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <h1 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-white mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                 {project.title}
               </h1>
               <p className="text-stone-500 dark:text-stone-400 flex items-center gap-2">
@@ -91,7 +91,7 @@ export function ProjectDetail({ project, lab, relatedProjects, onDonate, onBack 
 
             {/* Description */}
             <div className="bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800">
-              <h2 className="text-xl font-bold text-stone-900 dark:text-white mb-4" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>À propos du projet</h2>
+              <h2 className="text-xl font-bold text-stone-900 dark:text-white mb-4" style={{ fontFamily: 'var(--font-heading)' }}>À propos du projet</h2>
               <p className="text-stone-600 dark:text-stone-400 leading-relaxed">{project.description}</p>
             </div>
 
@@ -194,7 +194,7 @@ export function ProjectDetail({ project, lab, relatedProjects, onDonate, onBack 
         {/* Related Projects */}
         {relatedProjects.length > 0 && (
           <section className="mt-16 pb-16">
-            <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+            <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
               Projets similaires
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

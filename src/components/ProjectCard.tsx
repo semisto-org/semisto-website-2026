@@ -92,7 +92,7 @@ export function ProjectCard({ project, onView, onDonate }: ProjectCardProps) {
         {/* Title */}
         <h3 
           className="text-xl font-bold text-stone-900 dark:text-stone-100 mb-3 line-clamp-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {project.title}
         </h3>

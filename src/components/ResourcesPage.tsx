@@ -79,7 +79,7 @@ export default function ResourcesPage({ resources, onDownload, onFilter }: Props
           <span className="inline-block px-5 py-2 rounded-full text-sm font-bold mb-6 bg-[#AFBD00]/20 text-[#AFBD00] backdrop-blur-sm border border-[#AFBD00]/30">
             📚 Ressources pédagogiques
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.95]" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.95]" style={{ fontFamily: 'var(--font-heading)' }}>
             Guides &<br />
             <span className="relative inline-block">
               ressources
@@ -170,7 +170,7 @@ export default function ResourcesPage({ resources, onDownload, onFilter }: Props
           {filtered.length === 0 ? (
             <div className="text-center py-20">
               <div className="text-6xl mb-4">🔍</div>
-              <h3 className="text-xl font-bold text-stone-700 dark:text-stone-300 mb-2" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <h3 className="text-xl font-bold text-stone-700 dark:text-stone-300 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                 Aucune ressource trouvée
               </h3>
               <p className="text-stone-500">Essayez un autre filtre ou revenez bientôt pour de nouveaux contenus.</p>
@@ -254,13 +254,13 @@ export default function ResourcesPage({ resources, onDownload, onFilter }: Props
         <div className="max-w-3xl mx-auto p-8 md:p-12 rounded-3xl bg-gradient-to-br from-[#5B5781] to-[#4a4670] text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
           <div className="relative">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
               Vous avez créé une ressource ?
             </h3>
             <p className="text-white/70 mb-6 max-w-md mx-auto">
               Partagez votre savoir avec la communauté. Nous publions les meilleurs contenus de notre réseau.
             </p>
-            <a href="/contact" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-white text-[#5B5781] font-bold hover:bg-[#AFBD00] hover:text-stone-900 transition-all hover:scale-105">
+            <a href="/contact/" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-white text-[#5B5781] font-bold hover:bg-[#AFBD00] hover:text-stone-900 transition-all hover:scale-105">
               Proposer une ressource
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>

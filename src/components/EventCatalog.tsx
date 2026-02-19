@@ -41,7 +41,7 @@ export function EventCatalog({ events, labId, onEventView, onEventRegister, onFi
             <div className="w-12 h-12 rounded-2xl bg-[#5B5781] flex items-center justify-center text-2xl shadow-lg">📅</div>
             <p className="text-white/60 font-medium">Événements Semisto</p>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-heading)' }}>
             Nos <span className="text-[#EF9B0D]">événements</span>
           </h1>
           <p className="text-lg text-white/70 max-w-xl">
@@ -165,9 +165,6 @@ export function EventCatalog({ events, labId, onEventView, onEventRegister, onFi
         </div>
       </section>
 
-      <style>{`
-        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-      `}</style>
     </div>
   )
 }

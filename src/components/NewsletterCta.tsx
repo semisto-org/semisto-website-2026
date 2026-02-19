@@ -56,7 +56,7 @@ export function NewsletterCta({ lab, onSubscribe }: NewsletterCtaProps) {
         {/* Heading */}
         <h2 
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           Rejoignez la newsletter
         </h2>

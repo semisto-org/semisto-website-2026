@@ -65,7 +65,7 @@ function WorksiteCard({ worksite, onView, onRegister, index }: WorksiteCardProps
             {/* Main badge */}
             <div className="relative bg-white dark:bg-stone-100 rounded-2xl p-3 text-center shadow-lg transform -rotate-3 group-hover:rotate-0 transition-transform duration-300">
               <div className="text-xs font-bold text-stone-500 tracking-wider">{dateInfo.month}</div>
-              <div className="text-3xl font-black text-stone-900 leading-none" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <div className="text-3xl font-black text-stone-900 leading-none" style={{ fontFamily: 'var(--font-heading)' }}>
                 {dateInfo.day}
               </div>
               <div className="text-[10px] text-stone-600 capitalize">{dateInfo.weekday}</div>
@@ -94,7 +94,7 @@ function WorksiteCard({ worksite, onView, onRegister, index }: WorksiteCardProps
         {/* Title */}
         <h3
           className="text-2xl md:text-3xl font-bold text-white mb-3 pr-20 leading-tight"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {worksite.title}
         </h3>
@@ -202,7 +202,7 @@ function ImpactCounter({ value, label, icon, suffix }: ImpactCounterProps) {
         </div>
         <div
           className="text-4xl md:text-5xl font-black text-stone-900 dark:text-white mb-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {value.toLocaleString('fr-FR')}{suffix}
         </div>
@@ -349,14 +349,14 @@ export function SemistoRoots({
           <h1 className="mb-6 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
             <span
               className="block text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tight"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
               Semisto
             </span>
             <span
               className="block text-7xl md:text-9xl lg:text-[10rem] font-black leading-[0.85] tracking-tight"
               style={{
-                fontFamily: '"Sole Serif Small", Georgia, serif',
+                fontFamily: 'var(--font-heading)',
                 background: 'linear-gradient(135deg, #a3e635 0%, #22c55e 50%, #84cc16 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
@@ -425,7 +425,7 @@ export function SemistoRoots({
           <div className="text-center mb-16">
             <h2
               className="text-4xl md:text-6xl font-black text-stone-900 dark:text-white mb-4"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
               Notre Impact Collectif
             </h2>
@@ -470,7 +470,7 @@ export function SemistoRoots({
             </span>
             <h2
               className="text-4xl md:text-6xl font-black text-stone-900 dark:text-white mb-4"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
               Prochains Chantiers
             </h2>
@@ -526,7 +526,7 @@ export function SemistoRoots({
           {/* Hand-drawn underline effect */}
           <h2
             className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             Prêt·e à planter
             <br />
@@ -578,69 +578,6 @@ export function SemistoRoots({
           </div>
         </div>
       </section>
-
-      {/* CSS Animations */}
-      <style>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-          opacity: 0;
-        }
-
-        @keyframes sway-slow {
-          0%, 100% { transform: rotate(-2deg); }
-          50% { transform: rotate(2deg); }
-        }
-        .animate-sway-slow {
-          animation: sway-slow 8s ease-in-out infinite;
-        }
-
-        @keyframes sway-medium {
-          0%, 100% { transform: rotate(-3deg); }
-          50% { transform: rotate(3deg); }
-        }
-        .animate-sway-medium {
-          animation: sway-medium 6s ease-in-out infinite;
-        }
-
-        @keyframes sway-fast {
-          0%, 100% { transform: rotate(-4deg); }
-          50% { transform: rotate(4deg); }
-        }
-        .animate-sway-fast {
-          animation: sway-fast 4s ease-in-out infinite;
-        }
-
-        @keyframes draw-root {
-          from { stroke-dashoffset: 2000; }
-          to { stroke-dashoffset: 0; }
-        }
-        .animate-draw-root {
-          stroke-dasharray: 2000;
-          animation: draw-root 3s ease-out forwards;
-        }
-        .animate-draw-root-2 {
-          stroke-dasharray: 2000;
-          animation: draw-root 4s ease-out forwards;
-          animation-delay: 0.5s;
-        }
-
-        .line-clamp-2 {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
     </div>
   )
 }

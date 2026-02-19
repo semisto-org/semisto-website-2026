@@ -24,7 +24,7 @@ export function LabCard({ lab, onSelect }: LabCardProps) {
           </span>
           <h3 
             className="text-xl font-bold text-white leading-tight"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {lab.name}
           </h3>

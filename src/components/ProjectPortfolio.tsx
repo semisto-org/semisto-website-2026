@@ -130,7 +130,7 @@ function FundingProgress({ raised, goal, currency = '€' }: FundingProgressProp
     <div className="space-y-3">
       <div className="flex justify-between items-end">
         <div>
-          <span className="text-2xl font-bold text-stone-900 dark:text-white" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <span className="text-2xl font-bold text-stone-900 dark:text-white" style={{ fontFamily: 'var(--font-heading)' }}>
             {raised.toLocaleString('fr-FR')}{currency}
           </span>
           <span className="text-stone-500 dark:text-stone-400 text-sm ml-1">
@@ -217,7 +217,7 @@ function ProjectCard({ project, onView, onDonate, isFeature = false, index }: Pr
             {/* Surface overlay */}
             <div className="absolute bottom-4 left-4 z-10">
               <div className="px-4 py-2 bg-black/60 backdrop-blur-sm rounded-xl text-white">
-                <span className="text-2xl font-bold" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+                <span className="text-2xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>
                   {formatSurface(project.surface)}
                 </span>
               </div>
@@ -249,7 +249,7 @@ function ProjectCard({ project, onView, onDonate, isFeature = false, index }: Pr
 
             <h3
               className="text-3xl lg:text-4xl font-bold text-stone-900 dark:text-white mb-4 leading-tight group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors cursor-pointer"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
               onClick={onView}
             >
               {project.title}
@@ -359,7 +359,7 @@ function ProjectCard({ project, onView, onDonate, isFeature = false, index }: Pr
 
         <h3
           className="text-xl font-bold text-stone-900 dark:text-white mb-2 leading-snug group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors cursor-pointer line-clamp-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
           onClick={onView}
         >
           {project.title}
@@ -506,7 +506,7 @@ export function ProjectPortfolio({
             <div>
               <h1
                 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-6"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Transformer les
                 <span className="block text-lime-400">territoires</span>
@@ -519,25 +519,25 @@ export function ProjectPortfolio({
             {/* Stats grid */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-4xl font-black text-white mb-1" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+                <div className="text-4xl font-black text-white mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
                   {stats.total}
                 </div>
                 <div className="text-stone-400 text-sm">Projets totaux</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-4xl font-black text-lime-400 mb-1" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+                <div className="text-4xl font-black text-lime-400 mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
                   {stats.totalTrees.toLocaleString('fr-FR')}
                 </div>
                 <div className="text-stone-400 text-sm">Arbres plantés</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-4xl font-black text-white mb-1" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+                <div className="text-4xl font-black text-white mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
                   {(stats.totalSurface / 10000).toFixed(1)}
                 </div>
                 <div className="text-stone-400 text-sm">Hectares transformés</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="text-4xl font-black text-emerald-400 mb-1" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+                <div className="text-4xl font-black text-emerald-400 mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
                   {stats.completed}
                 </div>
                 <div className="text-stone-400 text-sm">Projets réalisés</div>
@@ -617,7 +617,7 @@ export function ProjectPortfolio({
               <div>
                 <h2
                   className="text-3xl font-bold text-stone-900 dark:text-white"
-                  style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Projets à soutenir
                 </h2>
@@ -650,7 +650,7 @@ export function ProjectPortfolio({
             <div className="mb-12">
               <h2
                 className="text-3xl font-bold text-stone-900 dark:text-white mb-2"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 {activeStatus === 'completed' ? 'Projets réalisés' :
                  activeStatus === 'in-progress' ? 'Projets en cours' :
@@ -699,7 +699,7 @@ export function ProjectPortfolio({
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2
             className="text-4xl md:text-5xl font-black text-white mb-6"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             Vous avez un projet ?
           </h2>
@@ -716,31 +716,6 @@ export function ProjectPortfolio({
           </button>
         </div>
       </section>
-
-      {/* CSS Animations */}
-      <style>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.6s ease-out forwards;
-          opacity: 0;
-        }
-
-        .line-clamp-2 {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
     </div>
   )
 }

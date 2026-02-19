@@ -24,7 +24,7 @@
   --color-semisto-sky: #234766;
 
   /* Fonts */
-  --font-heading: 'Sole Serif', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Sole Serif Small', 'Sole Serif', Georgia, 'Times New Roman', serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 }
@@ -97,6 +97,64 @@ code, pre {
   animation: scaleIn 0.5s ease-out forwards;
 }
 
+/* Fade-in-up (used across many components) */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Sway animations (SemistoRoots) */
+@keyframes sway-slow {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+.animate-sway-slow { animation: sway-slow 8s ease-in-out infinite; }
+
+@keyframes sway-medium {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+.animate-sway-medium { animation: sway-medium 6s ease-in-out infinite; }
+
+@keyframes sway-fast {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+.animate-sway-fast { animation: sway-fast 4s ease-in-out infinite; }
+
+/* Draw-root animation */
+@keyframes draw-root {
+  from { stroke-dashoffset: 2000; }
+  to { stroke-dashoffset: 0; }
+}
+.animate-draw-root {
+  stroke-dasharray: 2000;
+  animation: draw-root 3s ease-out forwards;
+}
+.animate-draw-root-2 {
+  stroke-dasharray: 2000;
+  animation: draw-root 4s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Dropdown animation */
+@keyframes dropdown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-dropdown { animation: dropdown 0.2s ease-out; }
+
 /* Line clamp utilities */
 .line-clamp-2 {
   display: -webkit-box;
@@ -132,4 +190,54 @@ code, pre {
 ::selection {
   background-color: #AFBD00;
   color: #1c1917;
+}
+
+/* ============================================================================
+   Shared Component Patterns
+   ============================================================================ */
+
+/* Cards — consistent border-radius, shadow, hover effect */
+.card-base {
+  @apply bg-white dark:bg-stone-800 rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-700;
+  @apply shadow-sm hover:shadow-xl transition-all duration-300;
+}
+
+.card-base:hover {
+  @apply -translate-y-1;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all;
+  @apply hover:scale-[1.02] active:scale-[0.98];
+  background-color: #5B5781;
+}
+.btn-primary:hover {
+  background-color: #4a4669;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all;
+  @apply hover:scale-[1.02] active:scale-[0.98];
+  background-color: #AFBD00;
+  color: #1c1917;
+}
+.btn-secondary:hover {
+  background-color: #9eac00;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all;
+  @apply border-2 border-stone-200 dark:border-stone-600 text-stone-600 dark:text-stone-400;
+  @apply hover:border-[#5B5781] hover:text-[#5B5781] hover:scale-[1.02];
+}
+
+/* Section spacing */
+.section-padding {
+  @apply py-16 md:py-24 px-6;
+}
+
+/* Container */
+.container-content {
+  @apply max-w-7xl mx-auto px-6;
 }

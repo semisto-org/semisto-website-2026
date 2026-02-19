@@ -68,7 +68,7 @@ export function ArticleCard({ article, onView, variant = 'default' }: ArticleCar
           {/* Title */}
           <h3 
             className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-4 group-hover:text-[#5B5781] transition-colors"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {article.title}
           </h3>
@@ -181,7 +181,7 @@ export function ArticleCard({ article, onView, variant = 'default' }: ArticleCar
         {/* Title */}
         <h3 
           className="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-[#5B5781] transition-colors line-clamp-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {article.title}
         </h3>

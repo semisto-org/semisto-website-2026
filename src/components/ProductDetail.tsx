@@ -53,7 +53,7 @@ export function ProductDetail({ product, relatedProducts, onAddToCart, onBack }:
                 <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-white/80">{product.subcategory}</span>
               </div>
 
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
                 {product.name}
               </h1>
 
@@ -118,7 +118,7 @@ export function ProductDetail({ product, relatedProducts, onAddToCart, onBack }:
       {relatedProducts.length > 0 && (
         <section className="py-16 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+            <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
               Produits similaires
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -139,9 +139,6 @@ export function ProductDetail({ product, relatedProducts, onAddToCart, onBack }:
         </section>
       )}
 
-      <style>{`
-        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-      `}</style>
     </div>
   )
 }

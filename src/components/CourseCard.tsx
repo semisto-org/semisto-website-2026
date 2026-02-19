@@ -88,7 +88,7 @@ export function CourseCard({ course, onView }: CourseCardProps) {
         {/* Title */}
         <h3 
           className="text-xl font-bold text-stone-900 dark:text-stone-100 mb-3 group-hover:text-[#5B5781] transition-colors line-clamp-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {course.title}
         </h3>

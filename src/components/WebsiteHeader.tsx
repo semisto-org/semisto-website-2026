@@ -277,10 +277,6 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
         </div>
       </header>
 
-      <style>{`
-        @keyframes dropdown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-dropdown { animation: dropdown 0.2s ease-out; }
-      `}</style>
     </>
   )
 }

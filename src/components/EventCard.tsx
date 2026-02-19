@@ -70,7 +70,7 @@ export function EventCard({ event, onView }: EventCardProps) {
         {/* Title */}
         <h3 
           className="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-[#5B5781] transition-colors line-clamp-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {event.title}
         </h3>

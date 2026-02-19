@@ -147,7 +147,7 @@ export function CourseCatalog({
             {/* Title */}
             <h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
               Formations{' '}
               <span
@@ -409,7 +409,7 @@ export function CourseCatalog({
                 </div>
                 <h2
                   className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100"
-                  style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Formations en vedette
                 </h2>
@@ -437,7 +437,7 @@ export function CourseCatalog({
             <div className="flex items-center justify-between mb-8">
               <h2
                 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 {featuredCourses.length > 0 ? 'Toutes les formations' : 'Nos formations'}
               </h2>
@@ -471,7 +471,7 @@ export function CourseCatalog({
                 </div>
                 <h3
                   className="text-xl font-bold text-stone-900 dark:text-stone-100 mb-2"
-                  style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Aucune formation trouvée
                 </h3>
@@ -509,7 +509,7 @@ export function CourseCatalog({
           </span>
           <h2
             className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-4"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             Vous ne savez pas quelle formation choisir ?
           </h2>

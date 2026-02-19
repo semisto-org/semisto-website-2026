@@ -34,7 +34,7 @@
       "description": "Premier Lab du réseau, actif depuis 2019 en Belgique francophone. Pionnier du mouvement des jardins-forêts en Europe.",
       "shortDescription": "Jardins-forêts en Belgique francophone",
       "activePoles": ["design-studio", "academy", "nursery", "roots"],
-      "heroImage": "/images/labs/wallonie-hero.jpg",
+      "heroImage": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=1200&q=80",
       "contactEmail": "contact@wallonie.semisto.org",
       "address": "Rue de la Forêt 42, 5000 Namur, Belgique",
       "coordinates": { "lat": 50.4669, "lng": 4.8675 },
@@ -55,7 +55,7 @@
       "description": "Lab francilien développant les jardins-forêts urbains et périurbains autour de Paris. Spécialisé dans les projets avec les collectivités.",
       "shortDescription": "Jardins-forêts en région parisienne",
       "activePoles": ["design-studio", "academy"],
-      "heroImage": "/images/labs/idf-hero.jpg",
+      "heroImage": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80",
       "contactEmail": "contact@idf.semisto.org",
       "address": "12 rue des Jardins, 93100 Montreuil, France",
       "coordinates": { "lat": 48.8534, "lng": 2.4488 },
@@ -75,7 +75,7 @@
       "description": "Lab catalan pionnier des jardins-forêts méditerranéens adaptés au climat sec. Expertise en espèces résistantes à la sécheresse.",
       "shortDescription": "Boscos comestibles a Catalunya",
       "activePoles": ["design-studio", "academy", "nursery"],
-      "heroImage": "/images/labs/catalonia-hero.jpg",
+      "heroImage": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&q=80",
       "contactEmail": "contact@catalonia.semisto.org",
       "address": "Carrer del Bosc 8, 08025 Barcelona, España",
       "coordinates": { "lat": 41.4036, "lng": 2.1744 },
@@ -94,7 +94,7 @@
       "description": "Lab allemand basé en Rhénanie, développant les Waldgärten (jardins-forêts) dans les zones urbaines et rurales de l'ouest de l'Allemagne.",
       "shortDescription": "Waldgärten im Rheinland",
       "activePoles": ["design-studio", "roots"],
-      "heroImage": "/images/labs/rheinland-hero.jpg",
+      "heroImage": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1200&q=80",
       "contactEmail": "contact@rheinland.semisto.org",
       "address": "Waldstraße 15, 50667 Köln, Deutschland",
       "coordinates": { "lat": 50.9375, "lng": 6.9603 },
@@ -291,7 +291,7 @@
       "currency": "EUR",
       "spotsAvailable": 120,
       "spotsTotal": 400,
-      "image": "/images/events/conf-regeneration.jpg",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
       "speakers": ["Dr. Ernst Götsch"]
     },
     {
@@ -310,7 +310,7 @@
       "currency": "EUR",
       "spotsAvailable": 8,
       "spotsTotal": 25,
-      "image": "/images/events/visite-gembloux.jpg",
+      "image": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
       "speakers": []
     },
     {
@@ -348,7 +348,7 @@
       "currency": "EUR",
       "spotsAvailable": 85,
       "spotsTotal": 150,
-      "image": "/images/events/fete-plantation.jpg",
+      "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80",
       "speakers": []
     },
     {
@@ -367,7 +367,7 @@
       "currency": "EUR",
       "spotsAvailable": 35,
       "spotsTotal": 60,
-      "image": "/images/events/xerrada-aigua.jpg",
+      "image": "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80",
       "speakers": ["Jordi Puigvert", "Anna Soler"]
     },
     {
@@ -386,7 +386,7 @@
       "currency": "EUR",
       "spotsAvailable": 22,
       "spotsTotal": 30,
-      "image": "/images/events/pflanzaktion.jpg",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
       "speakers": []
     }
   ],
@@ -405,7 +405,7 @@
       "treesPlanted": 180,
       "status": "completed",
       "completedDate": "2025-04-15",
-      "images": ["/images/projects/ecole-namur-1.jpg", "/images/projects/ecole-namur-2.jpg"],
+      "images": ["https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&q=80", "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80"],
       "testimonial": {
         "text": "Les enfants adorent leur jardin-forêt ! C'est devenu un outil pédagogique incroyable pour toutes les matières.",
         "author": "Isabelle Marchal",
@@ -429,7 +429,7 @@
       "treesPlanted": 620,
       "status": "in-progress",
       "completedDate": null,
-      "images": ["/images/projects/campus-bxl-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1592928302636-c83cf1e1c887?w=800&q=80"],
       "testimonial": null,
       "fundingStatus": null,
       "fundingGoal": null,
@@ -449,7 +449,7 @@
       "treesPlanted": 95,
       "status": "funding",
       "completedDate": null,
-      "images": ["/images/projects/liege-quartier-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80"],
       "testimonial": null,
       "fundingStatus": "active",
       "fundingGoal": 18500,
@@ -469,7 +469,7 @@
       "treesPlanted": 0,
       "status": "funding",
       "completedDate": null,
-      "images": ["/images/projects/chu-charleroi-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&q=80"],
       "testimonial": null,
       "fundingStatus": "active",
       "fundingGoal": 45000,
@@ -513,7 +513,7 @@
       "treesPlanted": 0,
       "status": "funding",
       "completedDate": null,
-      "images": ["/images/projects/saint-denis-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1477554103909-49b1a2b0bd3e?w=800&q=80"],
       "testimonial": null,
       "fundingStatus": "active",
       "fundingGoal": 85000,
@@ -533,7 +533,7 @@
       "treesPlanted": 340,
       "status": "completed",
       "completedDate": "2025-06-10",
-      "images": ["/images/projects/can-pujol-1.jpg", "/images/projects/can-pujol-2.jpg"],
+      "images": ["https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80", "/images/projects/can-pujol-2.jpg"],
       "testimonial": {
         "text": "El bosc comestible ha transformat completament la nostra finca. Ara produïm fruita tot l'any malgrat les sequeres.",
         "author": "Pere Mas",
@@ -557,7 +557,7 @@
       "treesPlanted": 45,
       "status": "in-progress",
       "completedDate": null,
-      "images": ["/images/projects/guinardo-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80"],
       "testimonial": null,
       "fundingStatus": null,
       "fundingGoal": null,
@@ -577,7 +577,7 @@
       "treesPlanted": 75,
       "status": "in-progress",
       "completedDate": null,
-      "images": ["/images/projects/ehrenfeld-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80"],
       "testimonial": null,
       "fundingStatus": null,
       "fundingGoal": null,
@@ -597,7 +597,7 @@
       "treesPlanted": 52,
       "status": "completed",
       "completedDate": "2025-10-05",
-      "images": ["/images/projects/meyer-1.jpg"],
+      "images": ["https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"],
       "testimonial": {
         "text": "Unser Garten ist jetzt ein kleines Paradies. Die Kinder pflücken täglich Obst direkt vom Baum.",
         "author": "Claudia Meyer",
@@ -624,7 +624,7 @@
       "difficulty": "facile",
       "requirements": ["Vêtements adaptés à la météo", "Gants de jardinage", "Pique-nique"],
       "providedTools": true,
-      "image": "/images/worksites/liege-feb.jpg"
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80"
     },
     {
       "id": "worksite-gembloux-mulch",
@@ -641,7 +641,7 @@
       "difficulty": "modéré",
       "requirements": ["Vêtements de travail", "Gants solides", "Bottes"],
       "providedTools": true,
-      "image": "/images/worksites/gembloux-mulch.jpg"
+      "image": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80"
     },
     {
       "id": "worksite-montreuil-entretien",
@@ -690,7 +690,7 @@
       "subcategory": "pommier",
       "stock": 45,
       "countries": ["BE", "FR"],
-      "image": "/images/products/pommier-belchard.jpg",
+      "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d9b?w=800&q=80",
       "specs": {
         "hauteur": "Scion 1 an",
         "porteGreffe": "M106",
@@ -708,7 +708,7 @@
       "subcategory": "cassissier",
       "stock": 120,
       "countries": ["BE", "FR", "DE"],
-      "image": "/images/products/cassissier.jpg",
+      "image": "https://images.unsplash.com/photo-1596451190630-186aff535bf2?w=800&q=80",
       "specs": {
         "hauteur": "30-40 cm",
         "rusticité": "-30°C"
@@ -900,7 +900,7 @@
       "readingTime": 8,
       "category": "technique",
       "tags": ["strates", "design", "bases"],
-      "image": "/images/articles/7-strates.jpg",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
       "isFeatured": true
     },
     {
@@ -916,7 +916,7 @@
       "readingTime": 12,
       "category": "technique",
       "tags": ["guildes", "pommier", "associations"],
-      "image": "/images/articles/guilde-pommier.jpg",
+      "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d9b?w=800&q=80",
       "isFeatured": false
     },
     {
@@ -993,7 +993,7 @@
       "description": "Reportage de 15 minutes dans le JT de 13h sur le mouvement Semisto et le jardin-forêt de Gembloux.",
       "date": "2025-11-20",
       "url": "https://rtbf.be/jardins-forets-belgique",
-      "image": "/images/press/rtbf.jpg"
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
     },
     {
       "id": "press-lemonde",
@@ -1003,7 +1003,7 @@
       "description": "Enquête sur l'essor des jardins-forêts urbains en Europe, avec témoignages de Semisto Île-de-France.",
       "date": "2025-10-05",
       "url": "https://lemonde.fr/forets-comestibles-villes",
-      "image": "/images/press/lemonde.jpg"
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
     },
     {
       "id": "press-lavanguardia",
@@ -1013,7 +1013,7 @@
       "description": "Article sobre el moviment dels boscos comestibles a Catalunya i el treball de Semisto Catalunya.",
       "date": "2025-09-18",
       "url": "https://lavanguardia.com/boscos-comestibles",
-      "image": "/images/press/lavanguardia.jpg"
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
     },
     {
       "id": "press-podcast-regen",
@@ -1033,7 +1033,7 @@
       "description": "Beitrag über den Gemeinschaftsgarten in Köln-Ehrenfeld und das Engagement der Food Forest Heroes.",
       "date": "2025-07-10",
       "url": "https://wdr.de/waldgarten-koln",
-      "image": "/images/press/wdr.jpg"
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=400&q=80"
     }
   ],
   "resources": [
@@ -1045,7 +1045,7 @@
       "format": "pdf",
       "fileSize": "2.4 MB",
       "downloadUrl": "/resources/7-strates.pdf",
-      "image": "/images/resources/7-strates.jpg",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
       "languages": ["fr", "en", "de", "es", "nl"]
     },
     {
@@ -1056,7 +1056,7 @@
       "format": "pdf",
       "fileSize": "3.1 MB",
       "downloadUrl": "/resources/guildes-vegetales.pdf",
-      "image": "/images/resources/guildes.jpg",
+      "image": "https://images.unsplash.com/photo-1474564862106-1f23d10b9d9b?w=800&q=80",
       "languages": ["fr", "en", "de"]
     },
     {

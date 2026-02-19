@@ -458,7 +458,7 @@ function PullQuote({ children }: { children: React.ReactNode }) {
 
       <p
         className="relative text-3xl md:text-4xl font-light text-stone-700 dark:text-stone-300 leading-relaxed italic"
-        style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+        style={{ fontFamily: 'var(--font-heading)' }}
       >
         {children}
       </p>
@@ -557,7 +557,7 @@ function RelatedCard({ article, onClick }: RelatedCardProps) {
 
       <h3
         className="text-xl font-bold text-stone-900 dark:text-white mb-2 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors line-clamp-2"
-        style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+        style={{ fontFamily: 'var(--font-heading)' }}
       >
         {article.title}
       </h3>
@@ -726,7 +726,7 @@ export function ArticleDetail({
           {/* Title */}
           <h1
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.1] mb-8 max-w-4xl animate-fade-in-up"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {article.title}
           </h1>
@@ -782,7 +782,7 @@ export function ArticleDetail({
                 {index > 0 && (
                   <h2
                     className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-white mb-6"
-                    style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                    style={{ fontFamily: 'var(--font-heading)' }}
                   >
                     {section.title}
                   </h2>
@@ -796,7 +796,7 @@ export function ArticleDetail({
 
                     <p
                       className="text-xl md:text-2xl text-stone-800 dark:text-stone-200 leading-relaxed md:leading-[1.8]"
-                      style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                      style={{ fontFamily: 'var(--font-heading)' }}
                     >
                       {/* Large drop cap in a decorative box */}
                       <span className="float-left mr-4 mb-2 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-gradient-to-br from-lime-500 to-emerald-600 text-white text-5xl md:text-6xl font-bold rounded-2xl shadow-lg shadow-lime-500/30">
@@ -837,7 +837,7 @@ export function ArticleDetail({
                       >
                         <div
                           className="text-4xl font-black text-lime-600 dark:text-lime-400 mb-1"
-                          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                          style={{ fontFamily: 'var(--font-heading)' }}
                         >
                           {stat.value}
                         </div>
@@ -897,7 +897,7 @@ export function ArticleDetail({
 
                     <h3
                       className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-white mb-1"
-                      style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                      style={{ fontFamily: 'var(--font-heading)' }}
                     >
                       {article.author}
                     </h3>
@@ -948,7 +948,7 @@ export function ArticleDetail({
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <h2
             className="text-3xl md:text-4xl font-black text-white mb-4"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             Vous avez aimé cet article ?
           </h2>
@@ -979,7 +979,7 @@ export function ArticleDetail({
             <div className="flex items-center justify-between mb-12">
               <h2
                 className="text-3xl font-bold text-stone-900 dark:text-white"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Articles similaires
               </h2>
@@ -1002,21 +1002,6 @@ export function ArticleDetail({
 
       {/* CSS Animations */}
       <style>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-          opacity: 0;
-        }
-
         @keyframes float-slow {
           0%, 100% { transform: translate(0, 0) scale(1); }
           50% { transform: translate(30px, -30px) scale(1.05); }

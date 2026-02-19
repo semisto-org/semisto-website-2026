@@ -133,7 +133,7 @@ function ProfileCard({ profile, index, onSelect }: ProfileCardProps) {
           {/* Title */}
           <h3
             className="text-3xl font-bold text-white mb-2 tracking-tight"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {profile.title}
           </h3>
@@ -277,13 +277,13 @@ export function DesignStudioLanding({
             <h1 className="relative">
               <span
                 className="block text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 leading-[1.1] mb-4"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Créons ensemble votre
               </span>
               <span
                 className="relative inline-block text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1]"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif', color: '#AFBD00' }}
+                style={{ fontFamily: 'var(--font-heading)', color: '#AFBD00' }}
               >
                 jardin-forêt
                 {/* Decorative underline */}
@@ -457,7 +457,7 @@ export function DesignStudioLanding({
 
           <h2
             className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-4"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             Vous ne savez pas par où commencer ?
           </h2>

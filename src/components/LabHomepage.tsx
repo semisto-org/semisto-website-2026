@@ -155,7 +155,7 @@ function PoleCard({
 
         <h3
           className="text-lg font-bold mb-2 text-stone-900 dark:text-stone-100 transition-colors"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {config.name}
         </h3>
@@ -226,7 +226,7 @@ function CourseCard({
         <div className="flex items-start justify-between gap-2 mb-2">
           <h4
             className="font-bold text-stone-900 dark:text-stone-100 group-hover:text-[#B01A19] transition-colors line-clamp-2"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {course.title}
           </h4>
@@ -411,7 +411,7 @@ function ProjectCard({
           <p className="text-white/80 text-sm mb-1">📍 {project.location}</p>
           <h3
             className="text-xl font-bold text-white"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {project.title}
           </h3>
@@ -510,7 +510,7 @@ function ArticleCard({
           </span>
           <h3
             className="text-2xl font-bold text-white mb-3 group-hover:text-lime-300 transition-colors"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {article.title}
           </h3>
@@ -572,7 +572,7 @@ function ArticleCard({
         </span>
         <h4
           className="font-bold text-stone-900 dark:text-stone-100 group-hover:text-[#5B5781] transition-colors mb-2"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           {article.title}
         </h4>
@@ -639,7 +639,7 @@ function NewsletterSection({
 
         <h2
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
-          style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+          style={{ fontFamily: 'var(--font-heading)' }}
         >
           Restez connecté à la nature
         </h2>
@@ -763,7 +763,7 @@ export function LabHomepage({
           <h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-slide-up"
             style={{
-              fontFamily: '"Sole Serif Small", Georgia, serif',
+              fontFamily: 'var(--font-heading)',
               animationDelay: '0.3s'
             }}
           >
@@ -819,7 +819,7 @@ export function LabHomepage({
             </span>
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-4"
-              style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
               Explorez nos domaines d'expertise
             </h2>
@@ -859,7 +859,7 @@ export function LabHomepage({
                   </span>
                   <h3
                     className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100"
-                    style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                    style={{ fontFamily: 'var(--font-heading)' }}
                   >
                     Prochaines formations
                   </h3>
@@ -898,7 +898,7 @@ export function LabHomepage({
                   </span>
                   <h3
                     className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100"
-                    style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                    style={{ fontFamily: 'var(--font-heading)' }}
                   >
                     Événements à venir
                   </h3>
@@ -942,7 +942,7 @@ export function LabHomepage({
               </span>
               <h2
                 className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Nos projets
               </h2>
@@ -992,7 +992,7 @@ export function LabHomepage({
               </span>
               <h2
                 className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Derniers articles
               </h2>
@@ -1044,7 +1044,7 @@ export function LabHomepage({
         <div className="max-w-4xl mx-auto text-center">
           <h2
             className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-4"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             Prêt à démarrer votre projet ?
           </h2>

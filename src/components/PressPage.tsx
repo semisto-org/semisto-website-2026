@@ -61,7 +61,7 @@ export default function PressPage({ pressItems, onItemView }: Props) {
           <span className="inline-block px-5 py-2 rounded-full text-sm font-bold mb-6 bg-white/10 text-white/90 backdrop-blur-sm border border-white/20">
             📰 Presse & Médias
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.95]" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.95]" style={{ fontFamily: 'var(--font-heading)' }}>
             Semisto dans<br />
             <span className="text-[#AFBD00]">les médias</span>
           </h1>
@@ -102,7 +102,7 @@ export default function PressPage({ pressItems, onItemView }: Props) {
                 📁
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>Kit Presse</h2>
+                <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Kit Presse</h2>
                 <p className="text-white/70 max-w-xl">Logos, photos haute résolution, biographies et informations clés sur Semisto — tout ce dont vous avez besoin.</p>
               </div>
               <button className="px-8 py-3.5 rounded-xl bg-white text-[#5B5781] font-bold hover:bg-[#AFBD00] hover:text-stone-900 transition-all hover:scale-105 whitespace-nowrap shadow-lg">
@@ -154,7 +154,7 @@ export default function PressPage({ pressItems, onItemView }: Props) {
                       </span>
                       <span className="text-sm font-semibold text-stone-500">{item.outlet}</span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-white mb-3 group-hover:text-[#5B5781] transition-colors" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+                    <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-white mb-3 group-hover:text-[#5B5781] transition-colors" style={{ fontFamily: 'var(--font-heading)' }}>
                       {item.title}
                     </h3>
                     <p className="text-stone-600 dark:text-stone-400 mb-4 line-clamp-2">{item.description}</p>

@@ -170,7 +170,7 @@ export function ProductCatalog({
               {/* Title with decorative elements */}
               <h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1]"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 La boutique des
                 <br />
@@ -417,7 +417,7 @@ export function ProductCatalog({
 
               <h3
                 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-3"
-                style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                style={{ fontFamily: 'var(--font-heading)' }}
               >
                 Aucun produit trouvé
               </h3>
@@ -498,7 +498,7 @@ export function ProductCatalog({
                 </div>
                 <h3
                   className="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2"
-                  style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   {item.title}
                 </h3>
@@ -528,31 +528,6 @@ export function ProductCatalog({
           )}
         </button>
       </div>
-
-      {/* CSS animations */}
-      <style>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.6s ease-out forwards;
-          opacity: 0;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </div>
   )
 }

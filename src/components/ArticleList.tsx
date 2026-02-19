@@ -80,7 +80,7 @@ export default function ArticleList({ articles, labId, onArticleView, onFilter }
           <span className="inline-block px-5 py-2 rounded-full text-sm font-bold mb-6 bg-[#AFBD00]/20 text-[#AFBD00] backdrop-blur-sm border border-[#AFBD00]/30">
             ✍️ Blog & Édito
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.95]" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.95]" style={{ fontFamily: 'var(--font-heading)' }}>
             Histoires de<br />
             <span className="relative inline-block">
               jardins-forêts
@@ -149,7 +149,7 @@ export default function ArticleList({ articles, labId, onArticleView, onFilter }
           {paginated.length === 0 ? (
             <div className="text-center py-20">
               <div className="text-6xl mb-4">🌿</div>
-              <h3 className="text-xl font-bold text-stone-700 dark:text-stone-300 mb-2" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+              <h3 className="text-xl font-bold text-stone-700 dark:text-stone-300 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                 Aucun article dans cette catégorie
               </h3>
               <p className="text-stone-500">De nouveaux contenus germent régulièrement. Revenez bientôt !</p>
@@ -224,7 +224,7 @@ export default function ArticleList({ articles, labId, onArticleView, onFilter }
             backgroundSize: '60px 60px'
           }} />
           <div className="relative">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
               Ne manquez aucun article
             </h3>
             <p className="text-white/70 mb-6 max-w-md mx-auto">

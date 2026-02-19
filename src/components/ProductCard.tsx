@@ -161,7 +161,7 @@ export function ProductCard({ product, onView, onAddToCart }: ProductCardProps) 
           {/* Product name */}
           <h3
             className="text-lg font-bold text-stone-900 dark:text-stone-100 leading-snug mb-2 line-clamp-2 group-hover:text-[#5B5781] transition-colors"
-            style={{ fontFamily: '"Sole Serif Small", Georgia, serif' }}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {product.name}
           </h3>

@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../layouts/WebsiteLayout.astro'
 import { ProductDetail } from '../../../components/ProductDetail'
 import { getLabs, getProducts, getProductById } from '../../../lib/api'
 import { breadcrumbJsonLd } from '../../../lib/seo'
@@ -26,7 +26,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title={product.name}
   description={product.description}
   image={product.image}
@@ -38,4 +38,4 @@ const jsonLd = breadcrumbJsonLd([
     product={product}
     relatedProducts={relatedProducts}
   />
-</BaseLayout>
+</WebsiteLayout>

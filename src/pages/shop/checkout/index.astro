@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../layouts/WebsiteLayout.astro'
 import { Checkout } from '../../../components/Checkout'
 import { getLabs } from '../../../lib/api'
 
@@ -11,7 +11,7 @@ const pickupLocations = labs.map(l => ({
 }))
 ---
 
-<BaseLayout
+<WebsiteLayout
   title="Commande"
   description="Finalisez votre commande et choisissez votre point de retrait."
   labs={labs}
@@ -23,4 +23,4 @@ const pickupLocations = labs.map(l => ({
     currency="EUR"
     pickupLocations={pickupLocations}
   />
-</BaseLayout>
+</WebsiteLayout>

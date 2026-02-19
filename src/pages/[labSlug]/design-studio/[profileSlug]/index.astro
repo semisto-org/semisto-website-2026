@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../../layouts/WebsiteLayout.astro'
 import { DesignStudioProfile } from '../../../../components/DesignStudioProfile'
 import { getLabs, getLabBySlug, getDesignProfiles, getDesignProfileBySlug, getProjects } from '../../../../lib/api'
 import { breadcrumbJsonLd } from '../../../../lib/seo'
@@ -35,7 +35,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title={`${profile.title} — Design Studio ${lab.name}`}
   description={profile.description}
   labs={labs}
@@ -48,4 +48,4 @@ const jsonLd = breadcrumbJsonLd([
     profile={profile}
     exampleProjects={exampleProjects}
   />
-</BaseLayout>
+</WebsiteLayout>

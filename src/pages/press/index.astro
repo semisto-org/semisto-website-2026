@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../layouts/WebsiteLayout.astro'
 import { getLabs, getPressItems } from '../../lib/api'
 import { breadcrumbJsonLd } from '../../lib/seo'
 
@@ -19,7 +19,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title="Presse"
   description="Semisto dans les médias. Retrouvez nos apparitions TV, articles de presse, podcasts et interviews radio."
   labs={labs}
@@ -53,4 +53,4 @@ const jsonLd = breadcrumbJsonLd([
       </div>
     )}
   </section>
-</BaseLayout>
+</WebsiteLayout>

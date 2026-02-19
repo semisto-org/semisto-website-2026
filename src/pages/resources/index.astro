@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../layouts/WebsiteLayout.astro'
 import { getLabs, getResources } from '../../lib/api'
 import { breadcrumbJsonLd } from '../../lib/seo'
 import type { ResourceCategory } from '../../lib/types'
@@ -26,7 +26,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title="Ressources"
   description="Fiches pédagogiques, guides et vidéos sur les forêts comestibles. Téléchargez gratuitement nos ressources."
   labs={labs}
@@ -70,4 +70,4 @@ const jsonLd = breadcrumbJsonLd([
       )
     })}
   </section>
-</BaseLayout>
+</WebsiteLayout>

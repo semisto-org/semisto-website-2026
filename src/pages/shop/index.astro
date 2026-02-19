@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../layouts/WebsiteLayout.astro'
 import { ProductCatalog } from '../../components/ProductCatalog'
 import { getLabs, getProducts } from '../../lib/api'
 import { breadcrumbJsonLd } from '../../lib/seo'
@@ -14,7 +14,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title="Boutique"
   description="Boutique Semisto : plants d'arbres fruitiers, livres sur la permaculture, matériel pédagogique et outillage pour jardins-forêts."
   labs={labs}
@@ -33,4 +33,4 @@ const jsonLd = breadcrumbJsonLd([
       onCountryChange={(country) => {}}
     />
   </section>
-</BaseLayout>
+</WebsiteLayout>

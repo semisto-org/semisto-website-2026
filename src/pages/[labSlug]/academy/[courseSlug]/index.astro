@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../../layouts/WebsiteLayout.astro'
 import { getLabs, getLabSlugs, getLabBySlug, getCourses, getCourseBySlug } from '../../../../lib/api'
 import { courseJsonLd, breadcrumbJsonLd } from '../../../../lib/seo'
 
@@ -33,7 +33,7 @@ const jsonLd = [
 ]
 ---
 
-<BaseLayout
+<WebsiteLayout
   title={course.title}
   description={course.shortDescription}
   image={course.image}
@@ -128,4 +128,4 @@ const jsonLd = [
       </section>
     )}
   </article>
-</BaseLayout>
+</WebsiteLayout>

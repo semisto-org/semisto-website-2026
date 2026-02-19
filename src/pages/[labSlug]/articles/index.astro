@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../layouts/WebsiteLayout.astro'
 import { getLabs, getLabBySlug, getArticles, getLabSlugs } from '../../../lib/api'
 import { breadcrumbJsonLd } from '../../../lib/seo'
 
@@ -22,7 +22,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title={`Articles — ${lab.name}`}
   description={`Blog et actualités de ${lab.name}. Retours d'expérience, conseils techniques et témoignages sur les jardins-forêts.`}
   labs={labs}
@@ -58,4 +58,4 @@ const jsonLd = breadcrumbJsonLd([
       </div>
     )}
   </section>
-</BaseLayout>
+</WebsiteLayout>

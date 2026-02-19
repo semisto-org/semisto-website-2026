@@ -2,21 +2,18 @@
 import BaseLayout from './BaseLayout.astro'
 import WebsiteHeader from '../components/WebsiteHeader'
 import WebsiteFooter from '../components/WebsiteFooter'
+import { getLabs } from '../lib/api'
 
 interface Props {
   title: string
   description?: string
   ogImage?: string
   transparentHeader?: boolean
+  labs?: any[]
 }
 
 const { title, description, ogImage, transparentHeader = false } = Astro.props
-
-// Sample labs data (would come from CMS/API in production)
-const labs = [
-  { id: 'semisto-brussels', name: 'Semisto Brussels', slug: 'brussels', region: 'Bruxelles', country: 'BE', description: '', activePoles: ['design-studio', 'academy', 'nursery', 'roots'] as any, newsletterSubscribers: 2400, socialLinks: { facebook: '#', instagram: '#', youtube: '#' } },
-  { id: 'semisto-liege', name: 'Semisto Liège', slug: 'liege', region: 'Liège', country: 'BE', description: '', activePoles: ['academy', 'roots'] as any, newsletterSubscribers: 1200, socialLinks: { facebook: '#', instagram: '#' } },
-]
+const labs = Astro.props.labs || await getLabs()
 ---
 
 <BaseLayout title={title} description={description} ogImage={ogImage}>

@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../layouts/WebsiteLayout.astro'
 import { SemistoRoots } from '../../../components/SemistoRoots'
 import { getLabs, getLabBySlug, getWorksites, getImpactStats, getLabSlugs } from '../../../lib/api'
 import { breadcrumbJsonLd } from '../../../lib/seo'
@@ -24,7 +24,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title={`Semisto Roots — ${lab.name}`}
   description={`Rejoignez les Food Forest Heroes ! Participez aux chantiers participatifs de ${lab.name} et plantez des arbres.`}
   labs={labs}
@@ -40,4 +40,4 @@ const jsonLd = breadcrumbJsonLd([
     onWorksiteRegister={(id) => { alert('Inscription enregistrée !') }}
     onJoinHeroes={() => { alert('Bienvenue chez les Food Forest Heroes !') }}
   />
-</BaseLayout>
+</WebsiteLayout>

@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../layouts/WebsiteLayout.astro'
 import { TransformationMap } from '../../components/TransformationMap'
 import { getLabs, getMapProjects, getPotentialZones } from '../../lib/api'
 import { breadcrumbJsonLd } from '../../lib/seo'
@@ -14,7 +14,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title="Carte de transformation"
   description="Explorez tous les projets de jardins-forêts Semisto en Europe. Découvrez les zones à potentiel et proposez de nouvelles localisations."
   labs={labs}
@@ -35,4 +35,4 @@ const jsonLd = breadcrumbJsonLd([
       onAddZone={() => {}}
     />
   </section>
-</BaseLayout>
+</WebsiteLayout>

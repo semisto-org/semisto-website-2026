@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../../../layouts/WebsiteLayout.astro'
 import EventDetail from '../../../../components/EventDetail'
 import { getLabs, getLabBySlug, getEvents, getEventBySlug } from '../../../../lib/api'
 import { breadcrumbJsonLd } from '../../../../lib/seo'
@@ -27,7 +27,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title={event.title}
   description={event.description}
   image={event.image}
@@ -37,4 +37,4 @@ const jsonLd = breadcrumbJsonLd([
   type="article"
 >
   <EventDetail client:load event={event} />
-</BaseLayout>
+</WebsiteLayout>

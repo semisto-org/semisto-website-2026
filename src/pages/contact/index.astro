@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import WebsiteLayout from '../../layouts/WebsiteLayout.astro'
 import { getLabs } from '../../lib/api'
 import { breadcrumbJsonLd } from '../../lib/seo'
 
@@ -11,7 +11,7 @@ const jsonLd = breadcrumbJsonLd([
 ])
 ---
 
-<BaseLayout
+<WebsiteLayout
   title="Contact"
   description="Contactez Semisto. Que vous soyez particulier, entreprise ou collectivité, nous sommes à votre écoute."
   labs={labs}
@@ -72,4 +72,4 @@ const jsonLd = breadcrumbJsonLd([
       </div>
     </div>
   </section>
-</BaseLayout>
+</WebsiteLayout>

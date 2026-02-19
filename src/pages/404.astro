@@ -1,0 +1,10 @@
+---
+import WebsiteLayout from '../layouts/WebsiteLayout.astro'
+import NotFound from '../components/NotFound'
+---
+
+<WebsiteLayout title="Page introuvable">
+  <div class="pt-20">
+    <NotFound client:load />
+  </div>
+</WebsiteLayout>

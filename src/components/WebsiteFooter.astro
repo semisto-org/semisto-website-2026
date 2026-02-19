@@ -1,0 +1,78 @@
+---
+import type { Lab } from '../lib/types'
+
+interface Props {
+  labs: Lab[]
+}
+
+const { labs } = Astro.props
+const year = new Date().getFullYear()
+---
+
+<footer class="bg-stone-900 text-stone-300 mt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2 text-xl font-bold text-white mb-4" style="font-family: var(--font-heading)">
+          <span class="text-2xl">🌳</span> Semisto
+        </div>
+        <p class="text-sm text-stone-400 leading-relaxed">
+          Réseau européen de Labs transformant les zones anthropisées en forêts comestibles, jardins-forêts et haies fruitières.
+        </p>
+      </div>
+
+      <!-- Labs -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Nos Labs</h3>
+        <ul class="space-y-2">
+          {labs.map(lab => (
+            <li>
+              <a href={`/${lab.slug}/`} class="text-sm hover:text-white transition-colors">
+                {lab.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Explorer</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/shop/" class="hover:text-white transition-colors">Boutique</a></li>
+          <li><a href="/map/" class="hover:text-white transition-colors">Carte de transformation</a></li>
+          <li><a href="/resources/" class="hover:text-white transition-colors">Ressources</a></li>
+          <li><a href="/press/" class="hover:text-white transition-colors">Presse</a></li>
+          <li><a href="/contact/" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Newsletter</h3>
+        <p class="text-sm text-stone-400 mb-3">Recevez nos actualités et conseils sur les forêts comestibles.</p>
+        <form class="flex gap-2">
+          <input
+            type="email"
+            placeholder="votre@email.com"
+            class="flex-1 bg-stone-800 border border-stone-700 rounded-lg px-3 py-2 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-[#AFBD00]"
+          />
+          <button type="submit" class="bg-[#AFBD00] hover:bg-[#9aaa00] text-stone-900 font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+            OK
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="border-stone-800 my-10" />
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+      <p>© {year} Semisto. Tous droits réservés.</p>
+      <div class="flex gap-6">
+        <a href="/mentions-legales" class="hover:text-stone-300">Mentions légales</a>
+        <a href="/confidentialite" class="hover:text-stone-300">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>

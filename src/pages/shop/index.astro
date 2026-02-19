@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { ProductCatalog } from '../../components/ProductCatalog'
+import { getLabs, getProducts } from '../../lib/api'
+import { breadcrumbJsonLd } from '../../lib/seo'
+
+const labs = await getLabs()
+const products = await getProducts()
+const countries = [...new Set(products.flatMap(p => p.countries))].sort()
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: 'Boutique', url: '/shop/' },
+])
+---
+
+<BaseLayout
+  title="Boutique"
+  description="Boutique Semisto : plants d'arbres fruitiers, livres sur la permaculture, matériel pédagogique et outillage pour jardins-forêts."
+  labs={labs}
+  jsonLd={jsonLd}
+>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <ProductCatalog
+      client:load
+      products={products}
+      currentCountry="BE"
+      availableCountries={countries}
+      cartItemCount={0}
+      onProductView={(id) => {}}
+      onAddToCart={(id, qty) => { alert('Produit ajouté au panier !') }}
+      onCartOpen={() => {}}
+      onCountryChange={(country) => {}}
+    />
+  </section>
+</BaseLayout>

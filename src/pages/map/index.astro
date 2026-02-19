@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { TransformationMap } from '../../components/TransformationMap'
+import { getLabs, getMapProjects, getPotentialZones } from '../../lib/api'
+import { breadcrumbJsonLd } from '../../lib/seo'
+
+const labs = await getLabs()
+const mapProjects = await getMapProjects()
+const potentialZones = await getPotentialZones()
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: 'Carte de transformation', url: '/map/' },
+])
+---
+
+<BaseLayout
+  title="Carte de transformation"
+  description="Explorez tous les projets de jardins-forêts Semisto en Europe. Découvrez les zones à potentiel et proposez de nouvelles localisations."
+  labs={labs}
+  jsonLd={jsonLd}
+>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl font-bold text-stone-800 mb-2" style="font-family: var(--font-heading)">
+      Carte de transformation
+    </h1>
+    <p class="text-lg text-stone-500 mb-10">Tous les projets de forêts comestibles en Europe</p>
+
+    <TransformationMap
+      client:only="react"
+      projects={mapProjects}
+      potentialZones={potentialZones}
+      onProjectClick={(id) => {}}
+      onZoneClick={(id) => {}}
+      onAddZone={() => {}}
+    />
+  </section>
+</BaseLayout>

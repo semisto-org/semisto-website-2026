@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { getLabs } from '../../lib/api'
+import { breadcrumbJsonLd } from '../../lib/seo'
+
+const labs = await getLabs()
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: 'Contact', url: '/contact/' },
+])
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contactez Semisto. Que vous soyez particulier, entreprise ou collectivité, nous sommes à votre écoute."
+  labs={labs}
+  jsonLd={jsonLd}
+>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl font-bold text-stone-800 mb-2" style="font-family: var(--font-heading)">Contact</h1>
+    <p class="text-lg text-stone-500 mb-10">Envoyez-nous un message, nous vous répondrons dans les plus brefs délais.</p>
+
+    <form class="space-y-6" method="POST" action="/api/contact">
+      <div>
+        <label for="lab" class="block text-sm font-medium text-stone-700 mb-1">Lab concerné (optionnel)</label>
+        <select id="lab" name="labId" class="w-full border border-stone-300 rounded-xl px-4 py-3 text-stone-700 focus:outline-none focus:border-[#AFBD00] focus:ring-1 focus:ring-[#AFBD00]">
+          <option value="">— Général —</option>
+          {labs.map(lab => (
+            <option value={lab.id}>{lab.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-stone-700 mb-1">Nom *</label>
+          <input type="text" id="name" name="name" required class="w-full border border-stone-300 rounded-xl px-4 py-3 focus:outline-none focus:border-[#AFBD00] focus:ring-1 focus:ring-[#AFBD00]" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-stone-700 mb-1">Email *</label>
+          <input type="email" id="email" name="email" required class="w-full border border-stone-300 rounded-xl px-4 py-3 focus:outline-none focus:border-[#AFBD00] focus:ring-1 focus:ring-[#AFBD00]" />
+        </div>
+      </div>
+
+      <div>
+        <label for="subject" class="block text-sm font-medium text-stone-700 mb-1">Sujet *</label>
+        <input type="text" id="subject" name="subject" required class="w-full border border-stone-300 rounded-xl px-4 py-3 focus:outline-none focus:border-[#AFBD00] focus:ring-1 focus:ring-[#AFBD00]" />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-stone-700 mb-1">Message *</label>
+        <textarea id="message" name="message" rows="6" required class="w-full border border-stone-300 rounded-xl px-4 py-3 focus:outline-none focus:border-[#AFBD00] focus:ring-1 focus:ring-[#AFBD00] resize-none"></textarea>
+      </div>
+
+      <button type="submit" class="bg-[#AFBD00] hover:bg-[#9aaa00] text-stone-900 font-semibold py-3 px-8 rounded-xl transition-colors">
+        Envoyer
+      </button>
+    </form>
+
+    <!-- Labs contact info -->
+    <div class="mt-16 pt-10 border-t border-stone-200">
+      <h2 class="text-2xl font-bold text-stone-800 mb-6" style="font-family: var(--font-heading)">Nos Labs</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        {labs.map(lab => (
+          <div class="bg-stone-50 rounded-2xl p-6">
+            <h3 class="font-semibold text-stone-800 mb-2">{lab.name}</h3>
+            <p class="text-sm text-stone-500 mb-2">{lab.address}</p>
+            <a href={`mailto:${lab.contactEmail}`} class="text-sm text-[#AFBD00] hover:underline">{lab.contactEmail}</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

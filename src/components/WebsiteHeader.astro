@@ -1,0 +1,143 @@
+---
+import type { Lab } from '../lib/types'
+
+interface Props {
+  labs: Lab[]
+  currentLabSlug?: string
+}
+
+const { labs, currentLabSlug } = Astro.props
+const currentLab = currentLabSlug ? labs.find(l => l.slug === currentLabSlug) : null
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 text-xl font-bold" style="font-family: var(--font-heading)">
+        <span class="text-2xl">🌳</span>
+        <span class="text-stone-800">Semisto</span>
+        {currentLab && (
+          <span class="text-stone-400 font-normal text-base ml-1">{currentLab.name.replace('Semisto ', '')}</span>
+        )}
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-stone-600">
+        {currentLab ? (
+          <>
+            <a href={`/${currentLabSlug}/`} class="hover:text-stone-900 transition-colors">Accueil</a>
+            {currentLab.activePoles.includes('academy') && (
+              <a href={`/${currentLabSlug}/academy/`} class="hover:text-stone-900 transition-colors">Academy</a>
+            )}
+            {currentLab.activePoles.includes('design-studio') && (
+              <a href={`/${currentLabSlug}/design-studio/`} class="hover:text-stone-900 transition-colors">Design Studio</a>
+            )}
+            <a href={`/${currentLabSlug}/projects/`} class="hover:text-stone-900 transition-colors">Projets</a>
+            <a href={`/${currentLabSlug}/articles/`} class="hover:text-stone-900 transition-colors">Articles</a>
+            {currentLab.activePoles.includes('roots') && (
+              <a href={`/${currentLabSlug}/roots/`} class="hover:text-stone-900 transition-colors">Roots</a>
+            )}
+          </>
+        ) : (
+          <>
+            <a href="/" class="hover:text-stone-900 transition-colors">Accueil</a>
+            <a href="/shop/" class="hover:text-stone-900 transition-colors">Boutique</a>
+            <a href="/map/" class="hover:text-stone-900 transition-colors">Carte</a>
+            <a href="/resources/" class="hover:text-stone-900 transition-colors">Ressources</a>
+            <a href="/press/" class="hover:text-stone-900 transition-colors">Presse</a>
+            <a href="/contact/" class="hover:text-stone-900 transition-colors">Contact</a>
+          </>
+        )}
+      </nav>
+
+      <!-- Right side: Lab selector + Language + Mobile toggle -->
+      <div class="flex items-center gap-3">
+        <!-- Lab selector dropdown -->
+        <div class="hidden md:block relative">
+          <select
+            class="appearance-none bg-stone-100 border border-stone-200 rounded-lg px-3 py-1.5 text-sm text-stone-700 pr-8 cursor-pointer hover:bg-stone-200 transition-colors"
+            onchange={`window.location.href = this.value === 'global' ? '/' : '/' + this.value + '/'`}
+          >
+            <option value="global" selected={!currentLabSlug}>🌍 Global</option>
+            {labs.map(lab => (
+              <option value={lab.slug} selected={lab.slug === currentLabSlug}>
+                {lab.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Language selector -->
+        <select class="hidden md:block appearance-none bg-transparent text-sm text-stone-500 cursor-pointer">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+        </select>
+
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu-toggle"
+          class="md:hidden p-2 rounded-lg hover:bg-stone-100 transition-colors"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6 text-stone-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-stone-200 bg-white">
+    <nav class="px-4 py-4 space-y-2">
+      {currentLab ? (
+        <>
+          <a href={`/${currentLabSlug}/`} class="block py-2 text-stone-700 hover:text-stone-900">Accueil Lab</a>
+          {currentLab.activePoles.includes('academy') && (
+            <a href={`/${currentLabSlug}/academy/`} class="block py-2 text-stone-700 hover:text-stone-900">Academy</a>
+          )}
+          {currentLab.activePoles.includes('design-studio') && (
+            <a href={`/${currentLabSlug}/design-studio/`} class="block py-2 text-stone-700 hover:text-stone-900">Design Studio</a>
+          )}
+          <a href={`/${currentLabSlug}/projects/`} class="block py-2 text-stone-700 hover:text-stone-900">Projets</a>
+          <a href={`/${currentLabSlug}/articles/`} class="block py-2 text-stone-700 hover:text-stone-900">Articles</a>
+          {currentLab.activePoles.includes('roots') && (
+            <a href={`/${currentLabSlug}/roots/`} class="block py-2 text-stone-700 hover:text-stone-900">Roots</a>
+          )}
+        </>
+      ) : (
+        <>
+          <a href="/" class="block py-2 text-stone-700 hover:text-stone-900">Accueil</a>
+          <a href="/shop/" class="block py-2 text-stone-700 hover:text-stone-900">Boutique</a>
+          <a href="/map/" class="block py-2 text-stone-700 hover:text-stone-900">Carte</a>
+          <a href="/resources/" class="block py-2 text-stone-700 hover:text-stone-900">Ressources</a>
+          <a href="/press/" class="block py-2 text-stone-700 hover:text-stone-900">Presse</a>
+          <a href="/contact/" class="block py-2 text-stone-700 hover:text-stone-900">Contact</a>
+        </>
+      )}
+      <hr class="border-stone-200 my-2" />
+      <div class="py-2">
+        <p class="text-xs text-stone-400 uppercase tracking-wider mb-2">Labs</p>
+        {labs.map(lab => (
+          <a href={`/${lab.slug}/`} class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">
+            {lab.name}
+          </a>
+        ))}
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle')
+  const menu = document.getElementById('mobile-menu')
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true'
+    toggle.setAttribute('aria-expanded', String(!expanded))
+    menu?.classList.toggle('hidden')
+  })
+</script>

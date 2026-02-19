@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { DesignStudioLanding } from '../../../components/DesignStudioLanding'
+import { getLabs, getLabBySlug, getDesignProfiles, getLabSlugs } from '../../../lib/api'
+import { breadcrumbJsonLd } from '../../../lib/seo'
+
+export async function getStaticPaths() {
+  const slugs = await getLabSlugs()
+  return slugs.map(slug => ({ params: { labSlug: slug } }))
+}
+
+const { labSlug } = Astro.params
+const labs = await getLabs()
+const lab = await getLabBySlug(labSlug!)
+if (!lab) return Astro.redirect('/404')
+
+const profiles = await getDesignProfiles()
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: lab.name, url: `/${labSlug}/` },
+  { name: 'Design Studio', url: `/${labSlug}/design-studio/` },
+])
+---
+
+<BaseLayout
+  title={`Design Studio — ${lab.name}`}
+  description={`Conception de jardins-forêts sur mesure par ${lab.name}. Particuliers, entreprises, collectifs ou services publics.`}
+  labs={labs}
+  currentLabSlug={labSlug}
+  jsonLd={jsonLd}
+>
+  <DesignStudioLanding
+    client:load
+    lab={lab}
+    profiles={profiles}
+    onProfileSelect={(slug) => {
+      window.location.href = `/contact/?lab=${labSlug}&profile=${slug}`
+    }}
+  />
+</BaseLayout>

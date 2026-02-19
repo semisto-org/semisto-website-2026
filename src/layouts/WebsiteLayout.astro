@@ -1,0 +1,39 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import WebsiteHeader from '../components/WebsiteHeader'
+import WebsiteFooter from '../components/WebsiteFooter'
+
+interface Props {
+  title: string
+  description?: string
+  ogImage?: string
+  transparentHeader?: boolean
+}
+
+const { title, description, ogImage, transparentHeader = false } = Astro.props
+
+// Sample labs data (would come from CMS/API in production)
+const labs = [
+  { id: 'semisto-brussels', name: 'Semisto Brussels', slug: 'brussels', region: 'Bruxelles', country: 'BE', description: '', activePoles: ['design-studio', 'academy', 'nursery', 'roots'] as any, newsletterSubscribers: 2400, socialLinks: { facebook: '#', instagram: '#', youtube: '#' } },
+  { id: 'semisto-liege', name: 'Semisto Liège', slug: 'liege', region: 'Liège', country: 'BE', description: '', activePoles: ['academy', 'roots'] as any, newsletterSubscribers: 1200, socialLinks: { facebook: '#', instagram: '#' } },
+]
+---
+
+<BaseLayout title={title} description={description} ogImage={ogImage}>
+  <WebsiteHeader
+    client:load
+    labs={labs}
+    currentLabId={null}
+    currentLanguage="fr"
+    availableLanguages={['fr', 'en', 'de']}
+  />
+
+  <main>
+    <slot />
+  </main>
+
+  <WebsiteFooter
+    client:visible
+    labs={labs}
+  />
+</BaseLayout>

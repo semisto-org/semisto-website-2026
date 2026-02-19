@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { getLabs, getPressItems } from '../../lib/api'
+import { breadcrumbJsonLd } from '../../lib/seo'
+
+const labs = await getLabs()
+const pressItems = await getPressItems()
+
+const typeIcons: Record<string, string> = {
+  tv: '📺',
+  article: '📰',
+  podcast: '🎙️',
+  radio: '📻',
+}
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: 'Presse', url: '/press/' },
+])
+---
+
+<BaseLayout
+  title="Presse"
+  description="Semisto dans les médias. Retrouvez nos apparitions TV, articles de presse, podcasts et interviews radio."
+  labs={labs}
+  jsonLd={jsonLd}
+>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl font-bold text-stone-800 mb-2" style="font-family: var(--font-heading)">Presse</h1>
+    <p class="text-lg text-stone-500 mb-10">Semisto dans les médias</p>
+
+    {pressItems.length === 0 ? (
+      <p class="text-stone-500 text-center py-12">Aucune mention presse pour le moment.</p>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {pressItems.map(item => (
+          <a href={item.url} target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
+            <img src={item.image} alt={item.title} class="w-full h-48 object-cover" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span>{typeIcons[item.type] || '📰'}</span>
+                <span class="text-xs text-stone-400 uppercase font-medium">{item.outlet}</span>
+                <span class="text-xs text-stone-300">·</span>
+                <span class="text-xs text-stone-400">{new Date(item.date).toLocaleDateString('fr-FR')}</span>
+              </div>
+              <h2 class="text-lg font-semibold text-stone-800 group-hover:text-[#AFBD00] transition-colors mb-2">
+                {item.title}
+              </h2>
+              <p class="text-sm text-stone-500 line-clamp-2">{item.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

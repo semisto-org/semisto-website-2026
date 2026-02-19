@@ -1,0 +1,44 @@
+---
+import WebsiteLayout from '../layouts/WebsiteLayout.astro'
+import { GlobalHomepage } from '../components/GlobalHomepage'
+---
+
+<WebsiteLayout title="Accueil" description="Semisto — Réseau européen de jardins-forêts. Conception, formation, plantation." transparentHeader>
+  <GlobalHomepage
+    client:only="react"
+    labs={[
+      {
+        id: 'semisto-brussels',
+        name: 'Semisto Brussels',
+        slug: 'brussels',
+        region: 'Bruxelles',
+        country: 'BE',
+        description: 'Le lab de Bruxelles, au cœur de la forêt de Soignes',
+        activePoles: ['design-studio', 'academy', 'nursery', 'roots'],
+        newsletterSubscribers: 2400,
+        socialLinks: { facebook: '#', instagram: '#', youtube: '#' }
+      },
+      {
+        id: 'semisto-liege',
+        name: 'Semisto Liège',
+        slug: 'liege',
+        region: 'Liège',
+        country: 'BE',
+        description: 'Le lab de Liège, entre Meuse et forêts ardennaises',
+        activePoles: ['academy', 'roots'],
+        newsletterSubscribers: 1200,
+        socialLinks: { facebook: '#', instagram: '#' }
+      }
+    ]}
+    impactStats={{
+      treesPlanted: 12500,
+      volunteersActive: 340,
+      projectsCompleted: 48,
+      totalSurface: 125000,
+      co2Captured: 850,
+      speciesPlanted: 320,
+      worksitesCompleted: 87,
+      hoursVolunteered: 4200
+    }}
+  />
+</WebsiteLayout>

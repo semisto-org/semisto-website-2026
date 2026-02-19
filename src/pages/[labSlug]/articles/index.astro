@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { getLabs, getLabBySlug, getArticles, getLabSlugs } from '../../../lib/api'
+import { breadcrumbJsonLd } from '../../../lib/seo'
+
+export async function getStaticPaths() {
+  const slugs = await getLabSlugs()
+  return slugs.map(slug => ({ params: { labSlug: slug } }))
+}
+
+const { labSlug } = Astro.params
+const labs = await getLabs()
+const lab = await getLabBySlug(labSlug!)
+if (!lab) return Astro.redirect('/404')
+
+const articles = await getArticles(lab.id)
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: lab.name, url: `/${labSlug}/` },
+  { name: 'Articles', url: `/${labSlug}/articles/` },
+])
+---
+
+<BaseLayout
+  title={`Articles — ${lab.name}`}
+  description={`Blog et actualités de ${lab.name}. Retours d'expérience, conseils techniques et témoignages sur les jardins-forêts.`}
+  labs={labs}
+  currentLabSlug={labSlug}
+  jsonLd={jsonLd}
+>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl font-bold text-stone-800 mb-2" style="font-family: var(--font-heading)">Articles</h1>
+    <p class="text-lg text-stone-500 mb-10">{lab.name}</p>
+
+    {articles.length === 0 ? (
+      <p class="text-stone-500 text-center py-12">Aucun article pour le moment.</p>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map(article => (
+          <a href={`/${labSlug}/articles/${article.slug}/`} class="group bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-md transition-shadow">
+            <img src={article.image} alt={article.title} class="w-full h-48 object-cover" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-2 py-1 bg-stone-100 text-stone-600 text-xs rounded-full">{article.category}</span>
+                <span class="text-xs text-stone-400">{article.readingTime} min</span>
+              </div>
+              <h2 class="text-lg font-semibold text-stone-800 group-hover:text-[#AFBD00] transition-colors mb-2">
+                {article.title}
+              </h2>
+              <p class="text-sm text-stone-500 line-clamp-2">{article.excerpt}</p>
+              <div class="mt-4 text-xs text-stone-400">
+                {article.author} · {new Date(article.publishedAt).toLocaleDateString('fr-FR')}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

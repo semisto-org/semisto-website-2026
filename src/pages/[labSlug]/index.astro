@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { LabHomepage } from '../../components/LabHomepage'
+import { getLabs, getLabBySlug, getCourses, getEvents, getProjects, getArticles, getLabSlugs } from '../../lib/api'
+import { breadcrumbJsonLd } from '../../lib/seo'
+
+export async function getStaticPaths() {
+  const slugs = await getLabSlugs()
+  return slugs.map(slug => ({ params: { labSlug: slug } }))
+}
+
+const { labSlug } = Astro.params
+const labs = await getLabs()
+const lab = await getLabBySlug(labSlug!)
+if (!lab) return Astro.redirect('/404')
+
+const courses = await getCourses(lab.id)
+const events = await getEvents(lab.id)
+const projects = await getProjects(lab.id)
+const articles = await getArticles(lab.id)
+
+const upcomingCourses = courses.slice(0, 3)
+const upcomingEvents = events.slice(0, 3)
+const recentProjects = projects.slice(0, 4)
+const recentArticles = articles.slice(0, 3)
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: lab.name, url: `/${labSlug}/` },
+])
+---
+
+<BaseLayout
+  title={lab.name}
+  description={lab.description}
+  image={lab.heroImage}
+  labs={labs}
+  currentLabSlug={labSlug}
+  jsonLd={jsonLd}
+>
+  <LabHomepage
+    client:load
+    lab={lab}
+    upcomingCourses={upcomingCourses}
+    upcomingEvents={upcomingEvents}
+    recentProjects={recentProjects}
+    recentArticles={recentArticles}
+    onCourseView={(id) => {
+      const c = courses.find(x => x.id === id)
+      if (c) window.location.href = `/${labSlug}/academy/${c.slug}/`
+    }}
+    onEventView={(id) => window.location.href = `/${labSlug}/academy/`}
+    onProjectView={(id) => {
+      const p = projects.find(x => x.id === id)
+      if (p) window.location.href = `/${labSlug}/projects/${p.slug}/`
+    }}
+    onArticleView={(id) => {
+      const a = articles.find(x => x.id === id)
+      if (a) window.location.href = `/${labSlug}/articles/${a.slug}/`
+    }}
+    onNewsletterSubscribe={(email) => {
+      alert('Merci ! Vous êtes inscrit(e) à la newsletter.')
+    }}
+  />
+</BaseLayout>

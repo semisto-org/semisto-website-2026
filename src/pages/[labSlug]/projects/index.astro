@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { ProjectPortfolio } from '../../../components/ProjectPortfolio'
+import { getLabs, getLabBySlug, getProjects, getLabSlugs } from '../../../lib/api'
+import { breadcrumbJsonLd } from '../../../lib/seo'
+
+export async function getStaticPaths() {
+  const slugs = await getLabSlugs()
+  return slugs.map(slug => ({ params: { labSlug: slug } }))
+}
+
+const { labSlug } = Astro.params
+const labs = await getLabs()
+const lab = await getLabBySlug(labSlug!)
+if (!lab) return Astro.redirect('/404')
+
+const projects = await getProjects(lab.id)
+
+const jsonLd = breadcrumbJsonLd([
+  { name: 'Accueil', url: '/' },
+  { name: lab.name, url: `/${labSlug}/` },
+  { name: 'Projets', url: `/${labSlug}/projects/` },
+])
+---
+
+<BaseLayout
+  title={`Projets — ${lab.name}`}
+  description={`Portfolio des projets de jardins-forêts réalisés par ${lab.name}. Découvrez nos réalisations et soutenez les projets en cours.`}
+  labs={labs}
+  currentLabSlug={labSlug}
+  jsonLd={jsonLd}
+>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <ProjectPortfolio
+      client:load
+      projects={projects}
+      labId={lab.id}
+      onProjectView={(id) => {
+        const p = projects.find(x => x.id === id)
+        if (p) window.location.href = `/${labSlug}/projects/${p.slug}/`
+      }}
+      onDonate={(id) => {
+        const p = projects.find(x => x.id === id)
+        if (p) window.location.href = `/${labSlug}/projects/${p.slug}/#donate`
+      }}
+    />
+  </section>
+</BaseLayout>

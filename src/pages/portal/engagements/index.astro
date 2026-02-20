@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { PortalApp } from '../../../components/portal/PortalApp'
+import { getPartner, getPackages, getEngagements, getFundingProposals, getFundings, getImpactMetrics } from '../../../lib/portal-api'
+
+export const prerender = false
+
+const partner = getPartner()
+const packages = getPackages()
+const engagements = getEngagements()
+const fundingProposals = getFundingProposals()
+const fundings = getFundings()
+const impactMetrics = getImpactMetrics()
+---
+
+<BaseLayout title="Mes engagements — Espace Partenaire Semisto">
+  <PortalApp
+    client:load
+    partner={partner}
+    packages={packages}
+    engagements={engagements}
+    fundingProposals={fundingProposals}
+    fundings={fundings}
+    impactMetrics={impactMetrics}
+  />
+</BaseLayout>

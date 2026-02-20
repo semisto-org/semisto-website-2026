@@ -1,0 +1,23 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import { PortalPageNav } from '../components/portal/PortalPageNav'
+import { getPartner } from '../lib/portal-api'
+
+interface Props {
+  title: string
+  activePage: string
+}
+
+const { title, activePage } = Astro.props
+const partner = getPartner()
+const initials = partner.name.split(' ').map((w: string) => w[0]).join('').slice(0, 2)
+---
+
+<BaseLayout title={title}>
+  <div class="flex min-h-screen bg-stone-50 dark:bg-stone-950">
+    <PortalPageNav client:load activePage={activePage} partnerName={partner.name} partnerInitials={initials} />
+    <main class="flex-1 lg:ml-64 pb-20 lg:pb-0">
+      <slot />
+    </main>
+  </div>
+</BaseLayout>

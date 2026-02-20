@@ -1,5 +1,6 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import PortalLayout from '../../../layouts/PortalLayout.astro'
+import { EngagementDetail } from '../../../components/portal/EngagementDetail'
 import { getEngagementById } from '../../../lib/portal-api'
 
 export const prerender = false
@@ -12,15 +13,13 @@ if (!engagement) {
 }
 ---
 
-<BaseLayout title={`${engagement.title} — Espace Partenaire Semisto`}>
-  <div class="min-h-screen bg-stone-50 dark:bg-stone-950">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <a href="/portal/engagements/" class="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-stone-700 mb-6">
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-        Retour aux engagements
-      </a>
-      <div id="engagement-detail-root" data-engagement={JSON.stringify(engagement)}></div>
-      <p class="text-sm text-stone-400 mt-4">Composant EngagementDetail en cours de développement par Lovely.</p>
-    </div>
+<PortalLayout title={`${engagement.title} — Espace Partenaire Semisto`} activePage="engagements">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <EngagementDetail
+      client:load
+      engagement={engagement}
+      onBack={() => { window.location.href = '/portal/engagements/' }}
+      onDocumentDownload={(id) => alert(`Téléchargement du document ${id} (mockup)`)}
+    />
   </div>
-</BaseLayout>
+</PortalLayout>

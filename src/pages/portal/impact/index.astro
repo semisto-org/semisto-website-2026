@@ -1,5 +1,6 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import PortalLayout from '../../../layouts/PortalLayout.astro'
+import { ImpactDashboard } from '../../../components/portal/ImpactDashboard'
 import { getPartner, getImpactMetrics } from '../../../lib/portal-api'
 
 export const prerender = false
@@ -8,13 +9,13 @@ const partner = getPartner()
 const impactMetrics = getImpactMetrics()
 ---
 
-<BaseLayout title="Impact — Espace Partenaire Semisto">
-  <div class="min-h-screen bg-stone-50 dark:bg-stone-950">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 class="text-2xl font-bold text-stone-900 dark:text-white mb-2">Dashboard Impact</h1>
-      <p class="text-stone-500 dark:text-stone-400 mb-8">Métriques d'impact de {partner.name}</p>
-      <div id="impact-dashboard-root" data-partner={JSON.stringify(partner)} data-metrics={JSON.stringify(impactMetrics)}></div>
-      <p class="text-sm text-stone-400 mt-4">Composant ImpactDashboard en cours de développement par Lovely.</p>
-    </div>
+<PortalLayout title="Impact — Espace Partenaire Semisto" activePage="impact">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <ImpactDashboard
+      client:load
+      metrics={impactMetrics}
+      partnerName={partner.name}
+      onExportPdf={() => window.print()}
+    />
   </div>
-</BaseLayout>
+</PortalLayout>

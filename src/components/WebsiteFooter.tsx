@@ -181,10 +181,10 @@ export default function WebsiteFooter({ labs, currentLab }: Props) {
             <span className="text-[#AFBD00]">🌱 Fait avec amour pour la planète</span>
           </div>
           <div className="flex items-center gap-6 text-xs text-stone-500">
-            <a href="/legal" className="hover:text-white transition-colors">Mentions légales</a>
-            <a href="/privacy" className="hover:text-white transition-colors">Confidentialité</a>
-            <a href="/cookies" className="hover:text-white transition-colors">Cookies</a>
-            <a href="/accessibility" className="hover:text-white transition-colors">Accessibilité</a>
+            <a href="/legal/" className="hover:text-white transition-colors">Mentions légales</a>
+            <a href="/privacy/" className="hover:text-white transition-colors">Confidentialité</a>
+            <a href="/cookies/" className="hover:text-white transition-colors">Cookies</a>
+            <a href="/accessibility/" className="hover:text-white transition-colors">Accessibilité</a>
           </div>
         </div>
       </div>

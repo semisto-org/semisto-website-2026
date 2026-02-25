@@ -67,9 +67,11 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
   const currentLab = labs.find(l => l.id === currentLabId)
 
   const defaultLab = labs[0]?.slug || 'wallonie'
+  const getLanguageHref = (lang: string) => '/'
+
   const navLinks = [
     { label: 'Accueil', href: '/' },
-    { label: 'Labs', href: '#labs', hasMega: true },
+    { label: 'Labs', href: '/', hasMega: true },
     { label: 'Academy', href: `/${defaultLab}/academy/` },
     { label: 'Projets', href: `/${defaultLab}/projects/` },
     { label: 'Boutique', href: '/shop/' },
@@ -196,7 +198,7 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
                 {langDropdown && (
                   <div className="absolute right-0 mt-2 w-44 bg-white dark:bg-stone-800 rounded-xl shadow-xl border border-stone-200 dark:border-stone-700 overflow-hidden z-50 animate-dropdown">
                     {availableLanguages.map(lang => (
-                      <a key={lang} href={`/${lang === 'fr' ? '' : lang + '/'}`}
+                      <a key={lang} href={getLanguageHref(lang)}
                         className={`flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-stone-50 dark:hover:bg-stone-700 transition-colors ${
                           lang === currentLanguage ? 'font-bold text-[#5B5781] bg-[#5B5781]/5' : 'text-stone-700 dark:text-stone-300'
                         }`}>
@@ -265,7 +267,7 @@ export default function WebsiteHeader({ labs, currentLabId, currentLanguage, ava
                 <p className="px-4 text-xs text-stone-400 uppercase tracking-wider mb-2">Langue</p>
                 <div className="flex gap-2 px-4">
                   {availableLanguages.map(lang => (
-                    <a key={lang} href={`/${lang === 'fr' ? '' : lang + '/'}`}
+                    <a key={lang} href={getLanguageHref(lang)}
                       className={`px-3 py-2 rounded-lg text-sm font-medium ${lang === currentLanguage ? 'bg-[#5B5781] text-white' : 'bg-stone-100 dark:bg-stone-800 text-stone-600'}`}>
                       {LANG_LABELS[lang]?.flag} {lang.toUpperCase()}
                     </a>

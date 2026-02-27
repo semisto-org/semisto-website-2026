@@ -2,11 +2,10 @@ import { defineConfig } from 'astro/config'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
-import node from '@astrojs/node'
 
 export default defineConfig({
-  site: 'https://semisto.org',
-  adapter: node({ mode: 'standalone' }),
+  site: 'https://2026.semisto.org',
+  output: 'static',
   integrations: [
     react(),
     sitemap(),

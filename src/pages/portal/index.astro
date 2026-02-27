@@ -1,26 +1,29 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import { PortalApp } from '../../components/portal/PortalApp'
-import { getPartner, getPackages, getEngagements, getFundingProposals, getFundings, getImpactMetrics } from '../../lib/portal-api'
-
-export const prerender = false
-
-const partner = getPartner()
-const packages = getPackages()
-const engagements = getEngagements()
-const fundingProposals = getFundingProposals()
-const fundings = getFundings()
-const impactMetrics = getImpactMetrics()
+import WebsiteLayout from '../../layouts/WebsiteLayout.astro'
 ---
 
-<BaseLayout title="Espace Partenaire — Semisto">
-  <PortalApp
-    client:load
-    partner={partner}
-    packages={packages}
-    engagements={engagements}
-    fundingProposals={fundingProposals}
-    fundings={fundings}
-    impactMetrics={impactMetrics}
-  />
-</BaseLayout>
+<WebsiteLayout title="Espace partenaire" description="L'espace partenaire Semisto migre vers une nouvelle application dédiée.">
+  <section class="mx-auto max-w-3xl px-6 py-24 text-center">
+    <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Espace partenaire</p>
+    <h1 class="mt-4 text-4xl font-semibold text-stone-900">Un nouvel outil arrive bientôt</h1>
+    <p class="mt-6 text-lg leading-8 text-stone-600">
+      Nous déployons une application dédiée pour les partenaires Semisto. En attendant son lancement,
+      contactez l'équipe via Terranova ou par <a href="mailto:contact@semisto.org" class="font-semibold text-emerald-600 hover:text-emerald-700">contact@semisto.org</a>
+      pour accéder à vos documents, suivis et engagements.
+    </p>
+    <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+      <a
+        href="https://terranova.semisto.org"
+        class="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700"
+      >
+        Ouvrir Terranova
+      </a>
+      <a
+        href="mailto:contact@semisto.org"
+        class="inline-flex items-center justify-center rounded-full border border-stone-200 px-8 py-3 text-base font-semibold text-stone-700 transition hover:border-stone-300"
+      >
+        Écrire à l'équipe
+      </a>
+    </div>
+  </section>
+</WebsiteLayout>

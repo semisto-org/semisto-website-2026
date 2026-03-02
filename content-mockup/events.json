@@ -1,0 +1,162 @@
+[
+  {
+    "id": "pdc-wallonie-avril-2026",
+    "title": "Permaculture Design Certificate — Wallonie",
+    "type": "formation",
+    "lab": "Wallonie",
+    "startDate": "2026-04-12",
+    "endDate": "2026-04-23",
+    "location": "Les 4 Sources, Yvoir",
+    "price": 890,
+    "currency": "EUR",
+    "capacity": 16,
+    "spotsLeft": 4,
+    "language": "Français",
+    "description": "Formation certifiante de 72h en design permaculturel. Apprenez à concevoir des systèmes régénératifs avec Bill Mollison comme référence et des cas pratiques terrain.",
+    "highlights": [
+      "Certification internationale reconnue",
+      "12 jours d'immersion complète",
+      "Hébergement et repas inclus",
+      "Visite de forêts-jardins matures"
+    ],
+    "instructors": [
+      {
+        "name": "Marc Dujardin",
+        "title": "Designer permaculturel certifié",
+        "photo": "/images/instructors/marc.jpg"
+      }
+    ],
+    "image": "/images/events/pdc-wallonie-2026.jpg"
+  },
+  {
+    "id": "foret-jardin-idf-mai-2026",
+    "title": "Design de Forêts-Jardins — Île-de-France",
+    "type": "formation",
+    "lab": "Île-de-France",
+    "startDate": "2026-05-10",
+    "endDate": "2026-05-14",
+    "location": "Ferme de la Boissière, Montreuil",
+    "price": 450,
+    "currency": "EUR",
+    "capacity": 20,
+    "spotsLeft": 12,
+    "language": "Français",
+    "description": "Stage intensif de 5 jours pour maîtriser la conception d'écosystèmes forestiers comestibles. De la théorie à la plantation.",
+    "highlights": [
+      "Méthode des 7 strates",
+      "Calcul de rentabilité économique",
+      "Design d'un projet réel",
+      "Visite de 3 forêts-jardins"
+    ],
+    "instructors": [
+      {
+        "name": "Sophie Laurent",
+        "title": "Agroforestière & botaniste",
+        "photo": "/images/instructors/sophie.jpg"
+      }
+    ],
+    "image": "/images/events/foret-jardin-idf.jpg"
+  },
+  {
+    "id": "chantier-plantation-wallonie-mars-2026",
+    "title": "Chantier Participatif — Plantation Collective",
+    "type": "event",
+    "lab": "Wallonie",
+    "startDate": "2026-03-22",
+    "endDate": "2026-03-22",
+    "location": "Domaine des 4 Sources, Yvoir",
+    "price": 0,
+    "currency": "EUR",
+    "capacity": 30,
+    "spotsLeft": 18,
+    "language": "Français/English",
+    "description": "Journée de plantation collective d'une haie fruitière de 200m. Repas partagé et apprentissage terrain. Ouvert à tous, débutants bienvenus.",
+    "highlights": [
+      "Gratuit et ouvert à tous",
+      "Repas de midi offert",
+      "Apprentissage des techniques de plantation",
+      "Ambiance conviviale"
+    ],
+    "image": "/images/events/chantier-plantation.jpg"
+  },
+  {
+    "id": "agroforesterie-catalogne-juin-2026",
+    "title": "Agroforesterie Régénérative — Catalogne",
+    "type": "formation",
+    "lab": "Catalogne",
+    "startDate": "2026-06-15",
+    "endDate": "2026-06-17",
+    "location": "Finca Mas Roig, Girona",
+    "price": 280,
+    "currency": "EUR",
+    "capacity": 15,
+    "spotsLeft": 9,
+    "language": "Español/Català",
+    "description": "3 días intensivos sobre sistemas agroforestales mediterráneos. Diseño, implantación y manejo de bosques comestibles adaptados al clima catalán.",
+    "highlights": [
+      "Especies mediterráneas adaptadas",
+      "Gestión del agua en clima seco",
+      "Visita de proyectos locales",
+      "Red de contactos catalana"
+    ],
+    "instructors": [
+      {
+        "name": "Jordi Casals",
+        "title": "Ingeniero agrónomo & permacultor",
+        "photo": "/images/instructors/jordi.jpg"
+      }
+    ],
+    "image": "/images/events/agroforesterie-catalogne.jpg"
+  },
+  {
+    "id": "festival-recolte-wallonie-sept-2026",
+    "title": "Festival de la Récolte — Wallonie",
+    "type": "event",
+    "lab": "Wallonie",
+    "startDate": "2026-09-20",
+    "endDate": "2026-09-20",
+    "location": "Les 4 Sources, Yvoir",
+    "price": 15,
+    "currency": "EUR",
+    "capacity": 100,
+    "spotsLeft": 87,
+    "language": "Français",
+    "description": "Journée festive de récolte collective dans nos forêts-jardins. Ateliers, musique, marché de producteurs, et repas partagé.",
+    "highlights": [
+      "Récolte de fruits et légumes",
+      "Ateliers de transformation",
+      "Marché de producteurs locaux",
+      "Concerts acoustiques"
+    ],
+    "image": "/images/events/festival-recolte.jpg"
+  },
+  {
+    "id": "initiation-permaculture-rheinland-avril-2026",
+    "title": "Permakultur Einführung — Rheinland",
+    "type": "formation",
+    "lab": "Rheinland",
+    "startDate": "2026-04-05",
+    "endDate": "2026-04-06",
+    "location": "Ökogarten Bonn",
+    "price": 180,
+    "currency": "EUR",
+    "capacity": 18,
+    "spotsLeft": 6,
+    "language": "Deutsch",
+    "description": "2-tägige Einführung in Permakultur und essbare Waldgärten. Grundlagen, Praxisbeispiele und Gestaltungsprinzipien.",
+    "highlights": [
+      "Grundlagen der Permakultur",
+      "Planung eines Waldgartens",
+      "Besuch lokaler Projekte",
+      "Deutschsprachiges Team"
+    ],
+    "instructors": [
+      {
+        "name": "Klaus Müller",
+        "title": "Permakultur-Designer",
+        "photo": "/images/instructors/klaus.jpg"
+      }
+    ],
+    "image": "/images/events/permaculture-rheinland.jpg"
+  }
+]

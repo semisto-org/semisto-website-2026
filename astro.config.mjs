@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  site: 'https://2026.semisto.org',
+  site: 'https://semisto.org',
   output: 'static',
   integrations: [
     react(),

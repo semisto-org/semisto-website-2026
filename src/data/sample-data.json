@@ -404,7 +404,7 @@
       "surface": 3000,
       "treesPlanted": 180,
       "status": "completed",
-      "completedDate": "2025-04-15",
+      "completedDate": "2026-04-15",
       "images": ["https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&q=80", "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80"],
       "testimonial": {
         "text": "Les enfants adorent leur jardin-forêt ! C'est devenu un outil pédagogique incroyable pour toutes les matières.",
@@ -488,7 +488,7 @@
       "surface": 600,
       "treesPlanted": 420,
       "status": "completed",
-      "completedDate": "2025-11-20",
+      "completedDate": "2026-11-20",
       "images": ["https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&q=80", "https://images.unsplash.com/photo-1477554103909-49b1a2b0bd3e?w=800&q=80"],
       "testimonial": {
         "text": "Un projet magnifique qui redonne vie à ce patrimoine unique. Les habitants sont fiers de leur nouvelle forêt !",
@@ -532,7 +532,7 @@
       "surface": 8000,
       "treesPlanted": 340,
       "status": "completed",
-      "completedDate": "2025-06-10",
+      "completedDate": "2026-06-10",
       "images": ["https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80", "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80"],
       "testimonial": {
         "text": "El bosc comestible ha transformat completament la nostra finca. Ara produïm fruita tot l'any malgrat les sequeres.",
@@ -596,7 +596,7 @@
       "surface": 400,
       "treesPlanted": 52,
       "status": "completed",
-      "completedDate": "2025-10-05",
+      "completedDate": "2026-10-05",
       "images": ["https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"],
       "testimonial": {
         "text": "Unser Garten ist jetzt ein kleines Paradies. Die Kinder pflücken täglich Obst direkt vom Baum.",
@@ -896,7 +896,7 @@
       "content": "Le jardin-forêt imite la structure d'une forêt naturelle en utilisant sept strates distinctes...",
       "author": "Marie Fontaine",
       "authorRole": "Designer & Formatrice",
-      "publishedAt": "2025-12-15",
+      "publishedAt": "2026-12-15",
       "readingTime": 8,
       "category": "technique",
       "tags": ["strates", "design", "bases"],
@@ -912,7 +912,7 @@
       "content": "Une guilde végétale est un ensemble de plantes qui s'entraident mutuellement...",
       "author": "Pierre Delcourt",
       "authorRole": "Pépiniériste",
-      "publishedAt": "2025-11-28",
+      "publishedAt": "2026-11-28",
       "readingTime": 12,
       "category": "technique",
       "tags": ["guildes", "pommier", "associations"],
@@ -928,7 +928,7 @@
       "content": "Il y a un an exactement, nous plantions 420 arbres sur 600m²...",
       "author": "Camille Rousseau",
       "authorRole": "Coordinatrice de projets",
-      "publishedAt": "2025-12-20",
+      "publishedAt": "2026-12-20",
       "readingTime": 10,
       "category": "retour-experience",
       "tags": ["micro-forêt", "miyawaki", "bilan"],
@@ -944,7 +944,7 @@
       "content": "Le changement climatique accentue les périodes de sécheresse en Méditerranée...",
       "author": "Jordi Puigvert",
       "authorRole": "Designer",
-      "publishedAt": "2025-12-08",
+      "publishedAt": "2026-12-08",
       "readingTime": 15,
       "category": "technique",
       "tags": ["méditerranée", "sécheresse", "eau"],
@@ -960,7 +960,7 @@
       "content": "Als ich vor zwei Jahren zum ersten Mal von Semisto hörte...",
       "author": "Lisa Schmidt",
       "authorRole": "Food Forest Hero",
-      "publishedAt": "2025-12-01",
+      "publishedAt": "2026-12-01",
       "readingTime": 6,
       "category": "témoignage",
       "tags": ["heroes", "bénévolat", "engagement"],
@@ -976,7 +976,7 @@
       "content": "Depuis l'installation du jardin-forêt dans la cour, les pratiques pédagogiques ont évolué...",
       "author": "Isabelle Marchal",
       "authorRole": "Directrice d'école",
-      "publishedAt": "2025-11-15",
+      "publishedAt": "2026-11-15",
       "readingTime": 7,
       "category": "retour-experience",
       "tags": ["école", "pédagogie", "enfants"],
@@ -991,7 +991,7 @@
       "type": "tv",
       "title": "Des jardins-forêts pour nourrir la Belgique de demain",
       "description": "Reportage de 15 minutes dans le JT de 13h sur le mouvement Semisto et le jardin-forêt de Gembloux.",
-      "date": "2025-11-20",
+      "date": "2026-11-20",
       "url": "https://rtbf.be/jardins-forets-belgique",
       "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
@@ -1001,7 +1001,7 @@
       "type": "article",
       "title": "Forêts comestibles : la révolution verte qui séduit les villes",
       "description": "Enquête sur l'essor des jardins-forêts urbains en Europe, avec témoignages de Semisto Île-de-France.",
-      "date": "2025-10-05",
+      "date": "2026-10-05",
       "url": "https://lemonde.fr/forets-comestibles-villes",
       "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
@@ -1011,7 +1011,7 @@
       "type": "article",
       "title": "Boscos comestibles: la solució per a les ciutats del futur",
       "description": "Article sobre el moviment dels boscos comestibles a Catalunya i el treball de Semisto Catalunya.",
-      "date": "2025-09-18",
+      "date": "2026-09-18",
       "url": "https://lavanguardia.com/boscos-comestibles",
       "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
@@ -1021,7 +1021,7 @@
       "type": "podcast",
       "title": "Semisto : créer des forêts nourricières à l'échelle européenne",
       "description": "Interview de 45 minutes avec Marie Fontaine, co-fondatrice de Semisto, sur la vision et les défis du mouvement.",
-      "date": "2025-08-22",
+      "date": "2026-08-22",
       "url": "https://podcast-regeneration.fr/semisto",
       "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     },
@@ -1031,7 +1031,7 @@
       "type": "tv",
       "title": "Waldgärten: Zukunft der urbanen Landwirtschaft",
       "description": "Beitrag über den Gemeinschaftsgarten in Köln-Ehrenfeld und das Engagement der Food Forest Heroes.",
-      "date": "2025-07-10",
+      "date": "2026-07-10",
       "url": "https://wdr.de/waldgarten-koln",
       "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80"
     }
@@ -1222,7 +1222,7 @@
       "coordinates": { "lat": 50.1, "lng": 5.5 },
       "radius": 30,
       "addedBy": "Pierre Delcourt",
-      "addedAt": "2025-08-15"
+      "addedAt": "2026-08-15"
     },
     {
       "id": "zone-seine-saint-denis",
@@ -1231,7 +1231,7 @@
       "coordinates": { "lat": 48.92, "lng": 2.45 },
       "radius": 8,
       "addedBy": "Camille Rousseau",
-      "addedAt": "2025-09-22"
+      "addedAt": "2026-09-22"
     },
     {
       "id": "zone-emporda",
@@ -1240,7 +1240,7 @@
       "coordinates": { "lat": 42.1, "lng": 2.9 },
       "radius": 25,
       "addedBy": "Jordi Puigvert",
-      "addedAt": "2025-10-10"
+      "addedAt": "2026-10-10"
     }
   ]
 }

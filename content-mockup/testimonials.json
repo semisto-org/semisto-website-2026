@@ -1,0 +1,56 @@
+[
+  {
+    "id": "claire-marc-namur",
+    "author": "Claire & Marc",
+    "location": "Namur, Belgique",
+    "projectType": "Jardin familial",
+    "quote": "Semisto a transformé notre jardin de 2000m² en écosystème vivant. Trois ans plus tard, nous récoltons 8 mois sur 12. Les enfants adorent cueillir leur goûter directement dans le jardin.",
+    "image": "/images/testimonials/claire-marc.jpg",
+    "year": 2023
+  },
+  {
+    "id": "thomas-toulouse",
+    "author": "Thomas D.",
+    "location": "Toulouse, France",
+    "projectType": "Formation PDC",
+    "quote": "La formation PDC m'a donné les clés pour lancer mon activité de designer en permaculture. Investissement qui a changé ma vie. Je conçois maintenant des forêts-jardins pour des collectivités.",
+    "image": "/images/testimonials/thomas.jpg",
+    "year": 2024
+  },
+  {
+    "id": "aline-cofondatrice",
+    "author": "Aline Nihoul",
+    "location": "Wallonie, Belgique",
+    "projectType": "Co-fondatrice Semisto",
+    "quote": "Un projet ambitieux porté par des gens compétents et généreux. Semisto redéfinit ce qu'est l'abondance. Nous prouvons qu'écologie et rentabilité peuvent coexister.",
+    "image": "/images/testimonials/aline.jpg",
+    "year": 2025
+  },
+  {
+    "id": "mairie-montreuil",
+    "author": "Département Espaces Verts",
+    "location": "Montreuil, France",
+    "projectType": "Forêt urbaine comestible",
+    "quote": "Le Design Lab IDF nous a accompagnés pour transformer 5000m² de pelouse en forêt comestible. Le projet fait maintenant référence dans la région. Les habitants adorent.",
+    "image": "/images/testimonials/mairie.jpg",
+    "year": 2025
+  },
+  {
+    "id": "lars-berlin",
+    "author": "Lars K.",
+    "location": "Berlin, Allemagne",
+    "projectType": "Jardin communautaire",
+    "quote": "Das Semisto-Team hat uns geholfen, einen essbaren Wald in unserem Gemeinschaftsgarten zu planen. Drei Jahre später ist es ein Paradies für Mensch und Tier.",
+    "image": "/images/testimonials/lars.jpg",
+    "year": 2024
+  },
+  {
+    "id": "maria-barcelona",
+    "author": "Maria G.",
+    "location": "Barcelona, Espagne",
+    "projectType": "Formation Catalogne",
+    "quote": "El curso de agroforestería en Girona fue increíble. Aprendí técnicas adaptadas al clima mediterráneo. Ahora tengo mi propio bosque comestible de 3 hectáreas.",
+    "image": "/images/testimonials/maria.jpg",
+    "year": 2025
+  }
+]

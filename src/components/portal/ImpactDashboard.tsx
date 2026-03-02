@@ -51,8 +51,8 @@ export function ImpactDashboard({ metrics, partnerName, onExportPdf }: ImpactDas
   ]
 
   const certificates = [
-    { id: 'cert-1', title: 'Certificat RSE 2025', description: 'Attestation de contribution à la reforestation comestible', date: '2025-12-31', status: 'available' },
-    { id: 'cert-2', title: 'Bilan Carbone Partenaire', description: 'Calcul détaillé de votre compensation carbone', date: '2025-12-31', status: 'available' },
+    { id: 'cert-1', title: 'Certificat RSE 2026', description: 'Attestation de contribution à la reforestation comestible', date: '2026-12-31', status: 'available' },
+    { id: 'cert-2', title: 'Bilan Carbone Partenaire', description: 'Calcul détaillé de votre compensation carbone', date: '2026-12-31', status: 'available' },
     { id: 'cert-3', title: 'Certificat RSE 2026', description: 'En cours de génération — disponible en décembre', date: '2026-12-31', status: 'pending' },
   ]
 
@@ -146,7 +146,7 @@ export function ImpactDashboard({ metrics, partnerName, onExportPdf }: ImpactDas
                 <p className="text-xs text-stone-400 mb-2">{item.label}</p>
                 <div className="flex items-center justify-center gap-3">
                   <div>
-                    <p className="text-xs text-stone-400">2025</p>
+                    <p className="text-xs text-stone-400">2026</p>
                     <p className="text-sm font-medium text-stone-500">{typeof item.prev === 'number' ? item.prev.toLocaleString('fr-BE') : item.prev} {item.unit}</p>
                   </div>
                   <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>

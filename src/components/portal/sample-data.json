@@ -25,7 +25,7 @@
     "contactName": "Sophie Vandenberghe",
     "contactEmail": "sophie.vandenberghe@colruytgroup.com",
     "contactRole": "Responsable RSE",
-    "joinedDate": "2025-09-15",
+    "joinedDate": "2026-09-15",
     "description": "Colruyt Group soutient la transition écologique en Belgique à travers des projets de reforestation comestible et la mobilisation de ses collaborateurs."
   },
   "packages": [
@@ -149,7 +149,7 @@
       "packageType": "citizen-project",
       "title": "Forêt Comestible du Parc de la Dodaine",
       "status": "active",
-      "startDate": "2025-10-01",
+      "startDate": "2026-10-01",
       "endDate": "2028-09-30",
       "labName": "Semisto Wallonie",
       "labContact": "Antoine Dumont",
@@ -165,7 +165,7 @@
         {
           "id": "evt-001",
           "title": "Visite de terrain et étude de faisabilité",
-          "date": "2025-10-15",
+          "date": "2026-10-15",
           "type": "milestone",
           "status": "completed",
           "description": "Visite du site avec l'équipe Semisto et les représentants de la commune. Validation du potentiel du terrain."
@@ -173,7 +173,7 @@
         {
           "id": "evt-002",
           "title": "Atelier co-conception #1 — Rêver le jardin",
-          "date": "2025-12-08",
+          "date": "2026-12-08",
           "type": "workshop",
           "status": "completed",
           "description": "Premier atelier avec 23 riverains. Recueil des souhaits, présentation du concept de forêt comestible."
@@ -200,7 +200,7 @@
           "id": "doc-001",
           "title": "Rapport de faisabilité",
           "type": "report",
-          "date": "2025-10-28",
+          "date": "2026-10-28",
           "url": "#",
           "fileSize": "2.4 MB"
         },
@@ -208,7 +208,7 @@
           "id": "doc-002",
           "title": "Compte-rendu atelier #1",
           "type": "report",
-          "date": "2025-12-12",
+          "date": "2026-12-12",
           "url": "#",
           "fileSize": "1.1 MB"
         },
@@ -226,7 +226,7 @@
           "id": "media-001",
           "type": "photo",
           "title": "Visite de terrain — Parc de la Dodaine",
-          "date": "2025-10-15",
+          "date": "2026-10-15",
           "url": "https://placeholder.co/800x600",
           "thumbnailUrl": "https://placeholder.co/200x150"
         },
@@ -234,7 +234,7 @@
           "id": "media-002",
           "type": "photo",
           "title": "Atelier co-conception #1 — Les riverains dessinent",
-          "date": "2025-12-08",
+          "date": "2026-12-08",
           "url": "https://placeholder.co/800x600",
           "thumbnailUrl": "https://placeholder.co/200x150"
         },
@@ -255,8 +255,8 @@
       "packageType": "team-building",
       "title": "Team Building Équipe Innovation — Forêt de Modave",
       "status": "completed",
-      "startDate": "2025-11-18",
-      "endDate": "2025-11-18",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
       "labName": "Semisto Wallonie",
       "labContact": "Marie Lefèvre",
       "totalBudget": 3500,
@@ -267,7 +267,7 @@
         {
           "id": "evt-005",
           "title": "Journée Team Building — Plantation d'automne",
-          "date": "2025-11-18",
+          "date": "2026-11-18",
           "type": "team-building",
           "status": "completed",
           "description": "28 collaborateurs ont participé à la plantation de 85 arbres fruitiers et arbustes. Journée conclue par un repas convivial au coin du feu."
@@ -278,7 +278,7 @@
           "id": "doc-004",
           "title": "Bilan carbone de la journée",
           "type": "report",
-          "date": "2025-11-25",
+          "date": "2026-11-25",
           "url": "#",
           "fileSize": "0.8 MB"
         },
@@ -286,7 +286,7 @@
           "id": "doc-005",
           "title": "Certificats de participation (28)",
           "type": "certificate",
-          "date": "2025-11-20",
+          "date": "2026-11-20",
           "url": "#",
           "fileSize": "3.2 MB"
         }
@@ -296,7 +296,7 @@
           "id": "media-004",
           "type": "photo",
           "title": "L'équipe Innovation plante son premier arbre",
-          "date": "2025-11-18",
+          "date": "2026-11-18",
           "url": "https://placeholder.co/800x600",
           "thumbnailUrl": "https://placeholder.co/200x150"
         },
@@ -304,7 +304,7 @@
           "id": "media-005",
           "type": "photo",
           "title": "Vue d'ensemble du chantier",
-          "date": "2025-11-18",
+          "date": "2026-11-18",
           "url": "https://placeholder.co/800x600",
           "thumbnailUrl": "https://placeholder.co/200x150"
         },
@@ -312,7 +312,7 @@
           "id": "media-006",
           "type": "photo",
           "title": "Repas convivial — produits du terroir",
-          "date": "2025-11-18",
+          "date": "2026-11-18",
           "url": "https://placeholder.co/800x600",
           "thumbnailUrl": "https://placeholder.co/200x150"
         },
@@ -320,7 +320,7 @@
           "id": "media-007",
           "type": "video",
           "title": "Récap vidéo de la journée",
-          "date": "2025-11-22",
+          "date": "2026-11-22",
           "url": "#",
           "thumbnailUrl": "https://placeholder.co/200x150",
           "duration": "3:12"
@@ -333,7 +333,7 @@
       "packageType": "recurring-patronage",
       "title": "Mécénat Mensuel — Réseau Semisto",
       "status": "active",
-      "startDate": "2025-09-15",
+      "startDate": "2026-09-15",
       "endDate": "2026-09-14",
       "labName": "Réseau Semisto",
       "labContact": "coordination@semisto.org",
@@ -348,15 +348,15 @@
       "events": [
         {
           "id": "evt-006",
-          "title": "Reporting trimestriel Q3 2025",
-          "date": "2025-10-10",
+          "title": "Reporting trimestriel Q3 2026",
+          "date": "2026-10-10",
           "type": "reporting",
           "status": "completed",
-          "description": "Présentation de l'utilisation des fonds sur juillet-septembre 2025. 60% alloués à Semisto Wallonie, 40% à Semisto Bruxelles."
+          "description": "Présentation de l'utilisation des fonds sur juillet-septembre 2026. 60% alloués à Semisto Wallonie, 40% à Semisto Bruxelles."
         },
         {
           "id": "evt-007",
-          "title": "Reporting trimestriel Q4 2025",
+          "title": "Reporting trimestriel Q4 2026",
           "date": "2026-01-12",
           "type": "reporting",
           "status": "completed",
@@ -374,15 +374,15 @@
       "documents": [
         {
           "id": "doc-006",
-          "title": "Rapport trimestriel Q3 2025",
+          "title": "Rapport trimestriel Q3 2026",
           "type": "report",
-          "date": "2025-10-10",
+          "date": "2026-10-10",
           "url": "#",
           "fileSize": "1.5 MB"
         },
         {
           "id": "doc-007",
-          "title": "Rapport trimestriel Q4 2025",
+          "title": "Rapport trimestriel Q4 2026",
           "type": "report",
           "date": "2026-01-12",
           "url": "#",
@@ -468,7 +468,7 @@
       "proposalId": "fp-002",
       "proposalTitle": "Forêt Nourricière de la Ferme du Bois",
       "amount": 15000,
-      "date": "2025-11-20",
+      "date": "2026-11-20",
       "status": "allocated",
       "labName": "Semisto Wallonie"
     },
@@ -477,7 +477,7 @@
       "proposalId": "fp-001",
       "proposalTitle": "Verger Communautaire de Saint-Gilles",
       "amount": 5000,
-      "date": "2025-12-05",
+      "date": "2026-12-05",
       "status": "allocated",
       "labName": "Semisto Bruxelles"
     },
@@ -486,7 +486,7 @@
       "proposalId": "fp-003",
       "proposalTitle": "Jardin-Forêt de l'École du Centre",
       "amount": 3000,
-      "date": "2025-10-01",
+      "date": "2026-10-01",
       "status": "spent",
       "labName": "Semisto Wallonie"
     }
@@ -502,10 +502,10 @@
     "projectsSupported": 4,
     "labsReached": 2,
     "history": [
-      { "month": "2025-09", "invested": 2000, "trees": 0, "hectares": 0 },
-      { "month": "2025-10", "invested": 5000, "trees": 0, "hectares": 0 },
-      { "month": "2025-11", "invested": 20500, "trees": 85, "hectares": 0.12 },
-      { "month": "2025-12", "invested": 7000, "trees": 0, "hectares": 0 },
+      { "month": "2026-09", "invested": 2000, "trees": 0, "hectares": 0 },
+      { "month": "2026-10", "invested": 5000, "trees": 0, "hectares": 0 },
+      { "month": "2026-11", "invested": 20500, "trees": 85, "hectares": 0.12 },
+      { "month": "2026-12", "invested": 7000, "trees": 0, "hectares": 0 },
       { "month": "2026-01", "invested": 2000, "trees": 340, "hectares": 2.0 },
       { "month": "2026-02", "invested": 2000, "trees": 0, "hectares": 0.15 }
     ]

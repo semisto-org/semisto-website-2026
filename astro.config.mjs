@@ -6,6 +6,7 @@ import node from '@astrojs/node'
 
 export default defineConfig({
   site: 'https://semisto.org',
+  output: 'static', // Static by default, opt-in SSR with prerender=false
   adapter: node({ mode: 'standalone' }),
   integrations: [
     react(),

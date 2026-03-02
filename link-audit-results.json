@@ -1,0 +1,618 @@
+{
+  "links": [
+    {
+      "url": "dist/client",
+      "status": 200,
+      "state": "OK",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/favicon.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/_astro/index.DjaC2yMV.css",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/academy/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/projects/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/shop/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/articles/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/roots/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/idf/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/catalonia/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/rheinland/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/press/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/articles/guilde-pommier-15-compagnons/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/articles/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/articles/comprendre-7-strates-jardin-foret/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/articles/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/contact/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/events/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/donate/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/design-studio/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/map/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/legal/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/cookies/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/privacy/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/accessibility/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/7-strates.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/succession-ecologique.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/fixatrices-azote.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/gestion-eau.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/guildes-vegetales.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/resources/calendrier-plantation.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/wallonie/articles/jardin-foret-outil-pedagogique/",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/articles/",
+      "failureDetails": []
+    },
+    {
+      "url": "dist/client/_astro/TransformationMap.CIGW-MKW.css",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/map/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://podcast-regeneration.fr/semisto",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "dist/client/press/"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/articles/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/articles/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/articles/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/idf/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=200&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/catalonia/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=600&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/catalonia/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/press/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/rheinland/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&q=80",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/resources/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://lemonde.fr/forets-comestibles-villes",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/press/"
+    },
+    {
+      "url": "https://facebook.com/semisto",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "https://facebook.com/semistowallonie",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://facebook.com/semistoidf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/idf/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://instagram.com/semisto",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "https://instagram.com/semistowallonie",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://instagram.com/semistocatalunya",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/catalonia/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://facebook.com/semistorheinland",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/rheinland/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://instagram.com/semistoidf",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/idf/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://rtbf.be/jardins-forets-belgique",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/press/"
+    },
+    {
+      "url": "https://lavanguardia.com/boscos-comestibles",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/press/"
+    },
+    {
+      "url": "https://wdr.de/waldgarten-koln",
+      "status": 410,
+      "state": "BROKEN",
+      "parent": "dist/client/press/"
+    },
+    {
+      "url": "https://linkedin.com/company/semisto",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client",
+      "failureDetails": []
+    },
+    {
+      "url": "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/b690c4ac-2c29-426b-8d36-a01c7e9aaca7/IMG_5114/w=3840,quality=90,fit=scale-down",
+      "status": 200,
+      "state": "OK",
+      "parent": "dist/client/wallonie/academy/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/academy/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/projects/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/shop/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/articles/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/roots/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/idf/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/catalonia/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/rheinland/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/press/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/articles/guilde-pommier-15-compagnons/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/articles/comprendre-7-strates-jardin-foret/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/contact/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/events/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/donate/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/resources/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/design-studio/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/map/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/legal/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/cookies/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/privacy/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/accessibility/"
+    },
+    {
+      "url": "https://youtube.com/semisto",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/articles/jardin-foret-outil-pedagogique/"
+    },
+    {
+      "url": "https://youtube.com/@semistowallonie",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "dist/client/wallonie/"
+    }
+  ],
+  "passed": false
+}
